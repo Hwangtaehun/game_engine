@@ -15,7 +15,7 @@ D:/Github/game_engine/GMengine
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-58573
+52706
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/Github/game_engine/GMengine
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [52476] Host "[IP] 192.168.45.170 [Port] 0 [Flags] 2 [Guid] 3061794544 [EditorId] 3061794544 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [52476] Host "[IP] 192.168.45.170 [Port] 0 [Flags] 2 [Guid] 3061794544 [EditorId] 3061794544 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [59228] Host "[IP] 192.168.45.170 [Port] 0 [Flags] 2 [Guid] 1827980348 [EditorId] 1827980348 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [59228] Host "[IP] 192.168.45.170 [Port] 0 [Flags] 2 [Guid] 1827980348 [EditorId] 1827980348 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 3.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.13f1 (70197a359f36)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -93,41 +93,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008696 seconds.
-- Loaded All Assemblies, in  0.647 seconds
+Registered in 0.004547 seconds.
+- Loaded All Assemblies, in  0.371 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.474 seconds
-Domain Reload Profiling: 1113ms
-	BeginReloadAssembly (228ms)
+- Finished resetting the current domain, in  0.288 seconds
+Domain Reload Profiling: 655ms
+	BeginReloadAssembly (137ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (96ms)
-	LoadAllAssembliesAndSetupDomain (242ms)
-		LoadAssemblies (218ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (132ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (238ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (220ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (132ms)
+				TypeCache.ScanAssembly (120ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (474ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (288ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (402ms)
+		SetupLoadedEditorAssemblies (236ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (289ms)
-			ProcessInitializeOnLoadMethodAttributes (88ms)
+			ProcessInitializeOnLoadAttributes (168ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -150,312 +150,148 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.686 seconds
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.741 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.345 seconds
-Domain Reload Profiling: 3014ms
-	BeginReloadAssembly (653ms)
+- Finished resetting the current domain, in  0.513 seconds
+Domain Reload Profiling: 1248ms
+	BeginReloadAssembly (311ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (60ms)
-	RebuildCommonClasses (68ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (80ms)
-	LoadAllAssembliesAndSetupDomain (844ms)
-		LoadAssemblies (772ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (338ms)
+		LoadAssemblies (303ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (369ms)
-			TypeCache.Refresh (312ms)
-				TypeCache.ScanAssembly (286ms)
-			BuildScriptInfoCaches (46ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1345ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (119ms)
+				TypeCache.ScanAssembly (108ms)
+			BuildScriptInfoCaches (17ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (513ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (928ms)
+		SetupLoadedEditorAssemblies (342ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (111ms)
-			ProcessInitializeOnLoadAttributes (676ms)
-			ProcessInitializeOnLoadMethodAttributes (116ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (273ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (46ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3155 unused Assets / (1.1 MB). Loaded Objects now: 3743.
-Memory consumption went from 129.3 MB to 128.2 MB.
-Total: 10.442500 ms (FindLiveObjects: 0.870000 ms CreateObjectMapping: 0.719900 ms MarkObjects: 7.230900 ms  DeleteObjects: 1.619800 ms)
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3156 unused Assets / (0.9 MB). Loaded Objects now: 3749.
+Memory consumption went from 130.5 MB to 129.6 MB.
+Total: 5.790400 ms (FindLiveObjects: 0.380100 ms CreateObjectMapping: 0.239400 ms MarkObjects: 4.276300 ms  DeleteObjects: 0.893500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 818386.410772 seconds.
-  path: Assets/Snow Mountain/Source
-  artifactKey: Guid(13dbf644c137003458adf80b94a3a60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source using Guid(13dbf644c137003458adf80b94a3a60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '850309f951a95b2be983ada8eef6409f') in 0.0088457 seconds
+  Time since last request: 822634.760797 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Grounds
+  artifactKey: Guid(2e25c3ebd391bb043915019679b38557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Grounds using Guid(2e25c3ebd391bb043915019679b38557) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7a23cf28147b72c13fa622eb39e56cc') in 0.0054537 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.655069 seconds.
-  path: Assets/Snow Mountain/Source/cubemap
-  artifactKey: Guid(54570e9e0a134fb40bccb2505f361cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/cubemap using Guid(54570e9e0a134fb40bccb2505f361cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '342c05877dab39ee9fb12a96ab446e47') in 0.0011448 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.054098 seconds.
-  path: Assets/Snow Mountain/Source/cubemap/003_Sunrise_SkyboxVol2.hdr
-  artifactKey: Guid(9e6c5f0e069df4c47a3ffeb1ef4936bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/cubemap/003_Sunrise_SkyboxVol2.hdr using Guid(9e6c5f0e069df4c47a3ffeb1ef4936bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b835d4a1f66724cba9c9f3796b078e87') in 0.151421 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.496569 seconds.
-  path: Assets/Snow Mountain/Source/fbx
-  artifactKey: Guid(e7e4705ec9f34c24eae9d25efe3a0d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/fbx using Guid(e7e4705ec9f34c24eae9d25efe3a0d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '836c8df2395aef073f96774c98a9ccd8') in 0.0009831 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.053464 seconds.
-  path: Assets/Snow Mountain/Source/fbx/mountain_Snow_000.fbx
-  artifactKey: Guid(edc40406f07f9cf4990807aa8b0fc368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/fbx/mountain_Snow_000.fbx using Guid(edc40406f07f9cf4990807aa8b0fc368) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08239d1de0c0686374153b51a80a10b7') in 0.0983736 seconds
+  Time since last request: 0.127183 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Grounds/ground_01.prefab
+  artifactKey: Guid(9b68d0bab0322e44792a25b4305c663b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Grounds/ground_01.prefab using Guid(9b68d0bab0322e44792a25b4305c663b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bd11221903734e3620e8c4c54254bf1') in 0.0855977 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.116936 seconds.
-  path: Assets/Snow Mountain/Source/fbx/Materials
-  artifactKey: Guid(f72e3e72f10229c45b2ddc672b35e6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/fbx/Materials using Guid(f72e3e72f10229c45b2ddc672b35e6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6818cbbfa9ea20781465ac9abdd722e2') in 0.0009091 seconds
+  Time since last request: 2.399628 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees
+  artifactKey: Guid(272c63a46783d154982d0ca08c190e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees using Guid(272c63a46783d154982d0ca08c190e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '526f696c12f703ec13c17aa758d94e63') in 0.0005767 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.338156 seconds.
-  path: Assets/Snow Mountain/Source/tga
-  artifactKey: Guid(00c5efc4a50721842852b96a87e1f51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/tga using Guid(00c5efc4a50721842852b96a87e1f51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9995ab16e9a3cc5d0aad3d3b2d9f16e3') in 0.0009916 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.053115 seconds.
-  path: Assets/Snow Mountain/Source/tga/mountain_Snow_000_Aldedo.tga
-  artifactKey: Guid(1505f88752c96b943896f32982a5c39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/tga/mountain_Snow_000_Aldedo.tga using Guid(1505f88752c96b943896f32982a5c39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab201eb2bfa236d8e098a261269e56fc') in 0.0578011 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.490355 seconds.
-  path: Assets/Snow Mountain/Prefab
-  artifactKey: Guid(104e7bb4f9103d5468d7ba476b7658f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Prefab using Guid(104e7bb4f9103d5468d7ba476b7658f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48e1d13aeebe7df5a35960a9519d01fb') in 0.0028087 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.768102 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(8409d8d54488d6b47a2bf55ed6cf4e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(8409d8d54488d6b47a2bf55ed6cf4e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1540f52a0aadc84e9264db23dbd55b41') in 0.0130773 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.819587 seconds.
-  path: Assets/Stylized Snow Forest/Terrain
-  artifactKey: Guid(f8888459ea393554093946c5514b3b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Terrain using Guid(f8888459ea393554093946c5514b3b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36867d5fd8829b9896f2e4995048a0cd') in 0.0014516 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.055610 seconds.
-  path: Assets/Stylized Snow Forest/Terrain/Layer.terrainlayer
-  artifactKey: Guid(c1d80a365f4a9aa489135d8f81afb136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Terrain/Layer.terrainlayer using Guid(c1d80a365f4a9aa489135d8f81afb136) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34db9191cafb588ab3740efe4b151455') in 0.1772633 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.852602 seconds.
-  path: Assets/Stylized Snow Forest/Scenes
-  artifactKey: Guid(9de510700590ae84c8260f171b0fa951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Scenes using Guid(9de510700590ae84c8260f171b0fa951) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '290edcdff62c08da5fa5d33c1d62d471') in 0.0032164 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.862814 seconds.
-  path: Assets/Stylized Snow Forest/Scenes/Demo Assembled
-  artifactKey: Guid(d562e90ab27bc9844acbe801053cd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Scenes/Demo Assembled using Guid(d562e90ab27bc9844acbe801053cd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cab7d8afa931fbb4d3f1c93acab2bc1d') in 0.0015477 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.154789 seconds.
-  path: Assets/Stylized Snow Forest/Prefabs
-  artifactKey: Guid(08a7b6a053425a449aa31740bd6d5c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Prefabs using Guid(08a7b6a053425a449aa31740bd6d5c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b33a95f355eb680029d672ab3e95eac') in 0.0015277 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.118770 seconds.
-  path: Assets/Stylized Snow Forest/Prefabs/Straight.prefab
-  artifactKey: Guid(b8c83e1f89fb1f343b74be7bb3f38303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Prefabs/Straight.prefab using Guid(b8c83e1f89fb1f343b74be7bb3f38303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '533c30fd8d6d6d3955c9d3eed21342dd') in 23.6604081 seconds
+  Time since last request: 0.026824 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees/pine_medium_01.prefab
+  artifactKey: Guid(1e66d345b10380549a6c704e7469cd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees/pine_medium_01.prefab using Guid(1e66d345b10380549a6c704e7469cd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38bdb4e067522d09d8855cbb64cc5701') in 0.0133769 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005551 seconds.
-  path: Assets/Stylized Snow Forest/Prefabs/Rock_3.prefab
-  artifactKey: Guid(bd3902d22e225d2418a3fb59004719d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Prefabs/Rock_3.prefab using Guid(bd3902d22e225d2418a3fb59004719d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcbb41ab51a7b7ed35eb018fd06344ef') in 17.0569342 seconds
+  Time since last request: 0.000022 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees/pine_tall_01.prefab
+  artifactKey: Guid(cf28940a200ab6c4a956fd7bf2826383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees/pine_tall_01.prefab using Guid(cf28940a200ab6c4a956fd7bf2826383) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '917668a626aef6e99b70f1ba549b2756') in 0.01614 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Stylized Snow Forest/Prefabs/Tree_03.prefab
-  artifactKey: Guid(7f1e2ae58c5972e4085a61b1acdedaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Prefabs/Tree_03.prefab using Guid(7f1e2ae58c5972e4085a61b1acdedaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '116b291459cb95e7389d8e2432149b42') in 0.2594694 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+  Time since last request: 1.720806 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks
+  artifactKey: Guid(c785634de6ac7c346be25d681828f4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks using Guid(c785634de6ac7c346be25d681828f4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad0c75a94694e27ccc0caeaebca74cbb') in 0.0006013 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Stylized Snow Forest/Prefabs/Rock_4.prefab
-  artifactKey: Guid(674a46ec73e215a42868c91588af4a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Prefabs/Rock_4.prefab using Guid(674a46ec73e215a42868c91588af4a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93f5a02d4b67bf97fa8411fa97358f90') in 0.0610868 seconds
+  Time since last request: 0.039679 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_group_01.prefab
+  artifactKey: Guid(2e2a7dce56b5103498b4694187a2e4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_group_01.prefab using Guid(2e2a7dce56b5103498b4694187a2e4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c1330d94edfbc1d92b7c0e53f832468') in 0.0127929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_medium_01.prefab
+  artifactKey: Guid(9a9c9f179b956924c82620a22dbbf0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_medium_01.prefab using Guid(9a9c9f179b956924c82620a22dbbf0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7fe92956e96086c1038fb7c8b07cc4e') in 0.0136421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_medium_02.prefab
+  artifactKey: Guid(ed3241294c0df294bbed755cf402cbee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_medium_02.prefab using Guid(ed3241294c0df294bbed755cf402cbee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fabbb1d5caa7938f272269ec9b778601') in 0.0127145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.642453 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc
+  artifactKey: Guid(bf9c0c46fdcd6d94aaa5b3d610edef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc using Guid(bf9c0c46fdcd6d94aaa5b3d610edef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fd665f0bc9be0ef98ab32617a9ca1ce') in 0.000819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.114410 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc/fence_snowy_01.prefab
+  artifactKey: Guid(e1b06f4f8f8c96543b5582256c6ee1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc/fence_snowy_01.prefab using Guid(e1b06f4f8f8c96543b5582256c6ee1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a4161103a35bcf3d1bf18aa273ac26b') in 0.0386009 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Stylized Snow Forest/Prefabs/Rock_1.prefab
-  artifactKey: Guid(f46b8032d681ce14fabc95e15c32a959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Prefabs/Rock_1.prefab using Guid(f46b8032d681ce14fabc95e15c32a959) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2df8b5a79402b6a1b53caef34f078883') in 0.0813341 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+  Time since last request: 0.000025 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc/snow_pile_01.prefab
+  artifactKey: Guid(0df6ac81c882d1f46adb5cc93b890bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc/snow_pile_01.prefab using Guid(0df6ac81c882d1f46adb5cc93b890bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9abc1476eea5b43cb92bdd4337db9b9') in 0.0139339 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Stylized Snow Forest/Prefabs/Branch_03.prefab
-  artifactKey: Guid(037cabecf826b684ebed012479c2acc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylized Snow Forest/Prefabs/Branch_03.prefab using Guid(037cabecf826b684ebed012479c2acc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ec1f4bd8b93a086c268675ad6f37816') in 0.0418353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.424269 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f34163397d7a73dad3366c662ac23692') in 0.0028752 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.660256 seconds.
-  path: Assets/material
-  artifactKey: Guid(c93638e5de035d24abf3098aed99abc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/material using Guid(c93638e5de035d24abf3098aed99abc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b79768fcaa6ce867f37d9634c2c6b303') in 0.001241 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.107542 seconds.
-  path: Assets/material/snow.mat
-  artifactKey: Guid(5b7d86d078df432489c506bd8cfe0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/material/snow.mat using Guid(5b7d86d078df432489c506bd8cfe0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56e4f38332fd7efc8cfd1eee8103059f') in 0.1953435 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 320.908175 seconds.
-  path: Assets/Snow Mountain/Scenes
-  artifactKey: Guid(19f3d818df3050446b91e48f7d6a41de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Scenes using Guid(19f3d818df3050446b91e48f7d6a41de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cda78d00d6761c7db4f1e4abab392a86') in 0.0016697 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.695527 seconds.
-  path: Assets/Snow Mountain/Materials
-  artifactKey: Guid(4b3593cfa95aef840982442db8a82fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Materials using Guid(4b3593cfa95aef840982442db8a82fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c4e6c63225b5e5dc03dca3483481aff') in 0.0083026 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.675252 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(8f7ae676ce6939845a6223d93da151ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(8f7ae676ce6939845a6223d93da151ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89942ea45910b0fe43ff2a2d9a3a561e') in 0.0021595 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.321356 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '930bc41b01bd313eef1d5af42e0e1fc2') in 0.0013419 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.572548 seconds.
-  path: Assets/Scenes/Level.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dbf09c95137b1e117b0b64955add126') in 0.0020894 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 152.436162 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(8409d8d54488d6b47a2bf55ed6cf4e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(8409d8d54488d6b47a2bf55ed6cf4e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e62ffe54ea172cb85231074fd5add42a') in 0.0083551 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.218129 seconds.
-  path: Assets/material/snow.mat
-  artifactKey: Guid(5b7d86d078df432489c506bd8cfe0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/material/snow.mat using Guid(5b7d86d078df432489c506bd8cfe0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a40dc65bdd73327a00543ae125a5c4e') in 0.0302184 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.055755 seconds.
-  path: Assets/Snow Mountain/Materials/whitePlane.mat
-  artifactKey: Guid(0b4d14158efca2b4aa691b18b8a58e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Materials/whitePlane.mat using Guid(0b4d14158efca2b4aa691b18b8a58e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '423b2085caade8095dbcc081ea12445a') in 0.0182973 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 2635.044426 seconds.
-  path: Assets/Snow Mountain/Source/fbx/Materials/defaultMat.mat
-  artifactKey: Guid(5edd51db1a681f947a99246f5c23c923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow Mountain/Source/fbx/Materials/defaultMat.mat using Guid(5edd51db1a681f947a99246f5c23c923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43b661b455e1249ed07b6fd74431f1a8') in 0.0709343 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
