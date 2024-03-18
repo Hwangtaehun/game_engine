@@ -1,0 +1,1853 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.13f1 (70197a359f36) revision 7346554'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'ko' Physical Memory: 32620 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker9
+-projectPath
+D:/Github/game_engine/GMengine
+-logFile
+Logs/AssetImportWorker9.log
+-srvPort
+55835
+-job-worker-count
+7
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: D:/Github/game_engine/GMengine
+D:/Github/game_engine/GMengine
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28612] Host "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2068928842 [EditorId] 2068928842 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [28612] Host "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2068928842 [EditorId] 2068928842 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.13f1 (70197a359f36)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/game_engine/GMengine/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x24dd)
+    Vendor:   NVIDIA
+    VRAM:     8020 MB
+    Driver:   31.0.15.5176
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005282 seconds.
+- Loaded All Assemblies, in  0.483 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.379 seconds
+Domain Reload Profiling: 858ms
+	BeginReloadAssembly (174ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (167ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (181ms)
+				TypeCache.ScanAssembly (165ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (380ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (313ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (225ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.969 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.707 seconds
+Domain Reload Profiling: 1669ms
+	BeginReloadAssembly (391ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (463ms)
+		LoadAssemblies (398ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (207ms)
+			TypeCache.Refresh (175ms)
+				TypeCache.ScanAssembly (160ms)
+			BuildScriptInfoCaches (25ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (707ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (474ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (382ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 41 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3226 unused Assets / (1.0 MB). Loaded Objects now: 3842.
+Memory consumption went from 137.8 MB to 136.8 MB.
+Total: 9.739100 ms (FindLiveObjects: 0.700500 ms CreateObjectMapping: 0.645800 ms MarkObjects: 6.830100 ms  DeleteObjects: 1.561300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 344200.510863 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '49ddef22778a0618d4abdd6eb36bb99c') in 0.081424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Stylized Snow Forest/Resourses/Models/SM_Pine_02.fbx
+  artifactKey: Guid(83cedf7dbfd0f4e46b5caf81a9967415) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Stylized Snow Forest/Resourses/Models/SM_Pine_02.fbx using Guid(83cedf7dbfd0f4e46b5caf81a9967415) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dcf556c9f5ed577eb6f225ce9552ef9e') in 0.0834428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0012.wav
+  artifactKey: Guid(78dfa7e84d21b4adab175b30eb01eacc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0012.wav using Guid(78dfa7e84d21b4adab175b30eb01eacc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3f4e13121188decd78135eb9f675a78d') in 0.042841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0020.wav
+  artifactKey: Guid(58be6e1f7db214607a51dc56cff4ee13) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0020.wav using Guid(58be6e1f7db214607a51dc56cff4ee13) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bcd3bef7c073880653e0ab371d024caf') in 0.0366151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0034.wav
+  artifactKey: Guid(c035a7f37428c489999077c2be83e594) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0034.wav using Guid(c035a7f37428c489999077c2be83e594) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e3daa1db651ba5d0425925cbcb642678') in 0.0349929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0033.wav
+  artifactKey: Guid(bc29fe568d3ee4edd8259a80f3b64d26) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0033.wav using Guid(bc29fe568d3ee4edd8259a80f3b64d26) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '163b8e1b8d88c7c7e035b94ab5b17a7f') in 0.0364358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Stylized Snow Forest/Resourses/Models/SM_Grass.fbx
+  artifactKey: Guid(705fd60fa80124045a2001a1f14c0ee0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Stylized Snow Forest/Resourses/Models/SM_Grass.fbx using Guid(705fd60fa80124045a2001a1f14c0ee0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '857f79cf472a606853d2b851c6280954') in 0.0280348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Cartoon SportCar B01/script/brake_light.cs
+  artifactKey: Guid(37f9761a8bd354e4ea58544b8b976c43) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cartoon SportCar B01/script/brake_light.cs using Guid(37f9761a8bd354e4ea58544b8b976c43) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eba827e81629f790ce624e510738e5aa') in 0.0144952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Materials/mat_cheek.mat
+  artifactKey: Guid(5f9d44654b83160428d7c4cf276b3572) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Materials/mat_cheek.mat using Guid(5f9d44654b83160428d7c4cf276b3572) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cdbaf702c91de05e09f1034e5f51c102') in 0.0327105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Textures/sky.png
+  artifactKey: Guid(e2c14b06115a9e644a1c9f2ffb1ef81d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Textures/sky.png using Guid(e2c14b06115a9e644a1c9f2ffb1ef81d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3ca822a1ebdba82fd8cea5b63f99fdc9') in 0.0371107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Stylized Snow Forest/Scenes/Demo Assembled/Demo Assembled_Profiles/Demo_Scene.lighting
+  artifactKey: Guid(4f353369e5c771d4a9a26d81dbfb43c0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Stylized Snow Forest/Scenes/Demo Assembled/Demo Assembled_Profiles/Demo_Scene.lighting using Guid(4f353369e5c771d4a9a26d81dbfb43c0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8530592249fee6deb1dfd05e96e5f9cf') in 0.0253629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0037.wav
+  artifactKey: Guid(5545b4aa0573e4c96b26e3b6d6514d5f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0037.wav using Guid(5545b4aa0573e4c96b26e3b6d6514d5f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6281c3b6782e7323d3dad197605d8813') in 0.0371501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Animations/unitychan_HANDUP00_R.fbx
+  artifactKey: Guid(84ce5ea31570e6b4ca2949b8fe13ee42) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Animations/unitychan_HANDUP00_R.fbx using Guid(84ce5ea31570e6b4ca2949b8fe13ee42) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3d1a0e3f9a6aeac781cfb0acab26c96d') in 0.0497723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 325
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0027.wav
+  artifactKey: Guid(39c15a2c77273494b9b02b228371d87b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0027.wav using Guid(39c15a2c77273494b9b02b228371d87b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '56b8279f94c68d2a9ab2a2f69ee66691') in 0.0400501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/snowman_01.dae
+  artifactKey: Guid(67c0d4b701d2dfc4db4eb1f571616966) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/snowman_01.dae using Guid(67c0d4b701d2dfc4db4eb1f571616966) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f7bc0e983a633808a4b1ac8f7af70a39') in 0.0310069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/streetlamp_02.dae
+  artifactKey: Guid(0c9fe424fedd4dd47ad2a24feeab4438) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/streetlamp_02.dae using Guid(0c9fe424fedd4dd47ad2a24feeab4438) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'da3ac7fa3949dfe2da5d170ee1be0be5') in 0.018704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Stylized Snow Forest/Scenes/Demo Assembled/Demo Assembled/LightingData.asset
+  artifactKey: Guid(52121730742d32b478d44428fbcaccf4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Stylized Snow Forest/Scenes/Demo Assembled/Demo Assembled/LightingData.asset using Guid(52121730742d32b478d44428fbcaccf4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7462adca59163cf87688b914d40d29d1') in 0.0164908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/snow_pile_01.dae
+  artifactKey: Guid(2b9c370f9498dbb48bcf1b1110703f26) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/snow_pile_01.dae using Guid(2b9c370f9498dbb48bcf1b1110703f26) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '50bce0da3d33edc85f2083833420cbdb') in 0.0204388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/rock_medium_01.dae
+  artifactKey: Guid(73f69759cfddd5e4fa7c152c15e6300e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/rock_medium_01.dae using Guid(73f69759cfddd5e4fa7c152c15e6300e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0a545d9c15b740efa9f7bb1b9d249561') in 0.0224548 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Materials/eye_R1.mat
+  artifactKey: Guid(a87def7cf3654cc43add52e645fee2ce) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Materials/eye_R1.mat using Guid(a87def7cf3654cc43add52e645fee2ce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ca89f8a7c75e625ba8b8ed91b4264435') in 0.0239462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0016.wav
+  artifactKey: Guid(2c5aeebe156824017b25a8133a705d4f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0016.wav using Guid(2c5aeebe156824017b25a8133a705d4f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cc9a92679216959b40307eaba4a552cc') in 0.0358788 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1014.wav
+  artifactKey: Guid(1699abed5a7da43cabe83d31df9b7fae) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1014.wav using Guid(1699abed5a7da43cabe83d31df9b7fae) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '46e6698fe25a9f3e2c52213c67a939d2') in 0.0375396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1024.wav
+  artifactKey: Guid(91c68039ec5d440779d554f2876d84cc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1024.wav using Guid(91c68039ec5d440779d554f2876d84cc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cfe6d4343fbd6cd1bd03d1b1b30e9463') in 0.0352945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1030.wav
+  artifactKey: Guid(f5f3e09ef248149918ae12fcee944309) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1030.wav using Guid(f5f3e09ef248149918ae12fcee944309) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1aee634bab6d58bad70295bea243430b') in 0.0362874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1047.wav
+  artifactKey: Guid(ea1a3de72e0474bbfb22357be75fa443) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1047.wav using Guid(ea1a3de72e0474bbfb22357be75fa443) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ecc59b1fa9906503c1101c626e2fbc62') in 0.0365338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1063.wav
+  artifactKey: Guid(6b7993f1f34824d1890a2301f1c5df1b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1063.wav using Guid(6b7993f1f34824d1890a2301f1c5df1b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '164f63a74bc011b934251482aa79099d') in 0.0388126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0043.wav
+  artifactKey: Guid(666b5e8d439124793998f8707c8be1b3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0043.wav using Guid(666b5e8d439124793998f8707c8be1b3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b404dc929b7ffc9c7e7a532d36251ec5') in 0.0352242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1041.wav
+  artifactKey: Guid(b9f7c0b9749de4e218cc4d48348de108) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1041.wav using Guid(b9f7c0b9749de4e218cc4d48348de108) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'edbec516a5aaeb7894412c594133f313') in 0.0335234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1038.wav
+  artifactKey: Guid(1fea949ca16274adb8e4a6a9b673d938) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1038.wav using Guid(1fea949ca16274adb8e4a6a9b673d938) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fa2c0adb89c3125be6c885f120e8238a') in 0.0353187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0041.wav
+  artifactKey: Guid(ee51d876c275d4d60bded73b21ff3922) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0041.wav using Guid(ee51d876c275d4d60bded73b21ff3922) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '192acce9381ce03ef19c63658654af3f') in 0.0352813 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1015.wav
+  artifactKey: Guid(c5b7b617e6a324665b0154b0366b81a3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1015.wav using Guid(c5b7b617e6a324665b0154b0366b81a3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c24cb3124ad3a1b68114e2e77b0a2d44') in 0.0390767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1017.wav
+  artifactKey: Guid(8e0c119b1b4654fcf8a551a1bbf1f46f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1017.wav using Guid(8e0c119b1b4654fcf8a551a1bbf1f46f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ee27be09f114258a1b5930c0f4fea967') in 0.0353672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1058.wav
+  artifactKey: Guid(a33ebe5fd693c4502b94986bde08c96d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1058.wav using Guid(a33ebe5fd693c4502b94986bde08c96d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '32f2815504fab32f8caed7aaefc28d07') in 0.0353289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1048.wav
+  artifactKey: Guid(cc616918ae23a420fb52e5e6a8f0031e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1048.wav using Guid(cc616918ae23a420fb52e5e6a8f0031e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4e98955470c62316709cba01e8c8f2a2') in 0.0366059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1003.wav
+  artifactKey: Guid(1ec434e75e64c4dc7ab389969fcfaa46) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1003.wav using Guid(1ec434e75e64c4dc7ab389969fcfaa46) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cd54d8addffa0c8379255c170c26d787') in 0.0395089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1043.wav
+  artifactKey: Guid(134a343f4bcb142dc9ddd15b85071394) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1043.wav using Guid(134a343f4bcb142dc9ddd15b85071394) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c87035a26a76c28045f94c6c2fc7f723') in 0.0347182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1059.wav
+  artifactKey: Guid(5d1ffcb7eee5e4938966f53e507d5420) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1059.wav using Guid(5d1ffcb7eee5e4938966f53e507d5420) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7474e64f381903c6fd97d8a26743db63') in 0.0482092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1106.wav
+  artifactKey: Guid(094de76b4ed3d48f19844f529665011b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1106.wav using Guid(094de76b4ed3d48f19844f529665011b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cb985d728217bd7fc3504cc70fee91e9') in 0.0399665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1126.wav
+  artifactKey: Guid(c906f93ef18df410598c1cb290b4fcca) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1126.wav using Guid(c906f93ef18df410598c1cb290b4fcca) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f3bfab8b951acd7cb593f6022cecce8d') in 0.0411852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1124.wav
+  artifactKey: Guid(dbe5b0d8e626d48dc979aea6d3ca52fd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1124.wav using Guid(dbe5b0d8e626d48dc979aea6d3ca52fd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '52559db49b76cc251414ba2ea3077f8e') in 0.0369031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1077.wav
+  artifactKey: Guid(a547a21a0c17440fca7b13c6ebda770d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1077.wav using Guid(a547a21a0c17440fca7b13c6ebda770d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5715f0dfdc5497142e4af9ab71745773') in 0.038255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1121.wav
+  artifactKey: Guid(18f36ae73867646b7aabe41b95b93dcc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1121.wav using Guid(18f36ae73867646b7aabe41b95b93dcc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ba6bc82dd17c9c4e59af264d6a833f08') in 0.0369166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1116.wav
+  artifactKey: Guid(9ff8704a6636b40de95dcc77263c86a4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1116.wav using Guid(9ff8704a6636b40de95dcc77263c86a4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0b8104f5d5706ab9df04a488c5ed026b') in 0.035477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1086.wav
+  artifactKey: Guid(09dcd2f585c6d4d7f83a1ab41b8fd008) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1086.wav using Guid(09dcd2f585c6d4d7f83a1ab41b8fd008) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '171cf7f0611cc8fedaa9d38806f28de7') in 0.0361151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1084.wav
+  artifactKey: Guid(d3029239f552947acb50fb23db248fe6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1084.wav using Guid(d3029239f552947acb50fb23db248fe6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fe1e4c5844b1520de73e8833b5171959') in 0.0327957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1119.wav
+  artifactKey: Guid(aca50d41370c14dfeba15db45850fb02) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1119.wav using Guid(aca50d41370c14dfeba15db45850fb02) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bb8cea6ebb8f1489a43fe62da7ed6b8f') in 0.0403511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1100.wav
+  artifactKey: Guid(28f7e076ccd5640da8fad9bcc74efe58) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1100.wav using Guid(28f7e076ccd5640da8fad9bcc74efe58) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c8cb30d3f5a71a51390888d8e4f12b01') in 0.0359365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1114.wav
+  artifactKey: Guid(cb50c340793ac4231acd87859f4668c6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1114.wav using Guid(cb50c340793ac4231acd87859f4668c6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'efab8d16d457a077219f19fac46bb70b') in 0.0393833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1115.wav
+  artifactKey: Guid(4040d0562a5b14329802b5d5ce632642) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1115.wav using Guid(4040d0562a5b14329802b5d5ce632642) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '25d32619d78caa0f7377c3a70c0043c4') in 0.0365383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1069.wav
+  artifactKey: Guid(6f3247e3f23a04d1aa760ff2c7e8decb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1069.wav using Guid(6f3247e3f23a04d1aa760ff2c7e8decb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9ef261598770b099aab7f1a10bf198e2') in 0.0336189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1171.wav
+  artifactKey: Guid(b74b7b65252e34758b690a31b51ca39b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1171.wav using Guid(b74b7b65252e34758b690a31b51ca39b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f27489c1594a02f252fb9159fa98687f') in 0.0341682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1159.wav
+  artifactKey: Guid(dfad0cbe01e48476a81bd7b9ee514e59) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1159.wav using Guid(dfad0cbe01e48476a81bd7b9ee514e59) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd9a84f23b947588c455096557ed2e3a5') in 0.0341468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1148.wav
+  artifactKey: Guid(9b3912e8859164465a359471dc7340d4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1148.wav using Guid(9b3912e8859164465a359471dc7340d4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '192b7a48391a54508dad50807216aa6c') in 0.0353502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1141.wav
+  artifactKey: Guid(d575db14abfb34ffaa5421328cc8dccc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1141.wav using Guid(d575db14abfb34ffaa5421328cc8dccc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ba9be3f64917472cfb1408429f7cfb07') in 0.0336931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1161.wav
+  artifactKey: Guid(7ec751277255042eb81aca3d43df0c68) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1161.wav using Guid(7ec751277255042eb81aca3d43df0c68) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9b5324917670104e5e840e6847b7936d') in 0.0386125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1156.wav
+  artifactKey: Guid(7cffb83de6b4f43749e44258bf38cf7c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1156.wav using Guid(7cffb83de6b4f43749e44258bf38cf7c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f80da06a09217f8e08992830c4a3be98') in 0.0380156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1144.wav
+  artifactKey: Guid(e69d8e2713b28425084ff4e3ea26b2cf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1144.wav using Guid(e69d8e2713b28425084ff4e3ea26b2cf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b954cf3d0d6838057108f0e1d81dc7a2') in 0.0377038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1160.wav
+  artifactKey: Guid(f88751c97e67a45bead6b56942fe4ee0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1160.wav using Guid(f88751c97e67a45bead6b56942fe4ee0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e91df2c933cc22597f54353e0c358dca') in 0.0368139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1181.wav
+  artifactKey: Guid(d057fdd975ac543dd80c54a62a5d09a6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1181.wav using Guid(d057fdd975ac543dd80c54a62a5d09a6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e6fecac29e17912f9dff9724130461af') in 0.0340171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1174.wav
+  artifactKey: Guid(d895b3e88867749eb80ec257e12278bd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1174.wav using Guid(d895b3e88867749eb80ec257e12278bd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '10cfcd28191293b2b70eeab39428479a') in 0.0350731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1168.wav
+  artifactKey: Guid(41246cf5359974997ac6c9e8e3e66933) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1168.wav using Guid(41246cf5359974997ac6c9e8e3e66933) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e9e04459cad9d93e7224e3ed1d846d13') in 0.0399564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1172.wav
+  artifactKey: Guid(3d574452f12ff49e1810a853e290540b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1172.wav using Guid(3d574452f12ff49e1810a853e290540b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9af1962dd841d3088d44a68626968641') in 0.0352444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1132.wav
+  artifactKey: Guid(1ce210a50a3e2496a931b77bf6839e29) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1132.wav using Guid(1ce210a50a3e2496a931b77bf6839e29) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0d4f36bd5e60eb171568c0cdec328c0f') in 0.038108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1022.wav
+  artifactKey: Guid(89d7ad5062d904e9abe7e0b430d7c844) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1022.wav using Guid(89d7ad5062d904e9abe7e0b430d7c844) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c2f1dc872e7bd3a0973f44c4577e6407') in 0.037012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1185.wav
+  artifactKey: Guid(a8888b3df23104af892d4767b797223a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1185.wav using Guid(a8888b3df23104af892d4767b797223a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c5543045e611bf0e1cd34ccd16a4ef32') in 0.0375032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1225.wav
+  artifactKey: Guid(9b370d8eb6ffb49f8820db80e3e7b957) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1225.wav using Guid(9b370d8eb6ffb49f8820db80e3e7b957) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bec1ee0282150349e7cbde67443855aa') in 0.0330895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1197c.wav
+  artifactKey: Guid(29f909cdfba9e4028b7899e00a166918) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1197c.wav using Guid(29f909cdfba9e4028b7899e00a166918) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e01c895769a1a8950a3965c28d7d4ea5') in 0.0344298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1200.wav
+  artifactKey: Guid(4c3f4f4db01c44f7986dc8f7a3072b6c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1200.wav using Guid(4c3f4f4db01c44f7986dc8f7a3072b6c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0b7d67057ab6da47f87a34fdfb1ad32a') in 0.0361186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1235.wav
+  artifactKey: Guid(8392ee3a431e4485c998b0b8bcde6438) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1235.wav using Guid(8392ee3a431e4485c998b0b8bcde6438) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '21395c471103ff16025b7478ad2b6ac0') in 0.0374789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1216.wav
+  artifactKey: Guid(f972d61c0cbd64265af3023f93035e8f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1216.wav using Guid(f972d61c0cbd64265af3023f93035e8f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4318a9f4eea13c31bc2f7af23979853d') in 0.0349272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1230.wav
+  artifactKey: Guid(e0d458a6e98644678aee0f0bc8c334aa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1230.wav using Guid(e0d458a6e98644678aee0f0bc8c334aa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b78ea3afcfc525218743ec76c41c0863') in 0.0336765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1221.wav
+  artifactKey: Guid(ac5dabcc81e0144f9803277f71087554) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1221.wav using Guid(ac5dabcc81e0144f9803277f71087554) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eacccdc01f97c25bdffc6bd41fd518dd') in 0.0345398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1222.wav
+  artifactKey: Guid(330a389a63f06404aba06b59830e123b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1222.wav using Guid(330a389a63f06404aba06b59830e123b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8b04927b1efd5112bba90789ad24eeb7') in 0.0368456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1202.wav
+  artifactKey: Guid(f46e3dae66548461db72dc7c716ebf21) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1202.wav using Guid(f46e3dae66548461db72dc7c716ebf21) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd97e711eb2cadd48656b270158edaeb8') in 0.0366014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1231.wav
+  artifactKey: Guid(368c4c2d049084d2ca3f6f6e2419640c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1231.wav using Guid(368c4c2d049084d2ca3f6f6e2419640c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c7f50caf43f9cf8c20e1117498666d04') in 0.0365138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1211.wav
+  artifactKey: Guid(6e8d3c050efaa49559744a0b39de4433) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1211.wav using Guid(6e8d3c050efaa49559744a0b39de4433) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '66eba2c77eefba91fc49fd018c55a505') in 0.031973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1204.wav
+  artifactKey: Guid(c94ac6646d3034cf3a1e25013234a21c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1204.wav using Guid(c94ac6646d3034cf3a1e25013234a21c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ebab0416e510629c39ec0e835b281dad') in 0.0325822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1201.wav
+  artifactKey: Guid(ea328a2994ed042899f3c5057c903a88) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1201.wav using Guid(ea328a2994ed042899f3c5057c903a88) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e054656490c1a88ffa9e6495fdcc14e3') in 0.0356954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1273.wav
+  artifactKey: Guid(155b80e2df5fe43cfaffbcd6a166f8a1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1273.wav using Guid(155b80e2df5fe43cfaffbcd6a166f8a1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '30b14fea2e6526d349833facb21d279a') in 0.0374737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1261.wav
+  artifactKey: Guid(0f9b83a7b39274177b6e3d39b408313f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1261.wav using Guid(0f9b83a7b39274177b6e3d39b408313f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3962531f997354f1b7b6d354bbd092db') in 0.0354509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1242.wav
+  artifactKey: Guid(46b9e448015a64b6ba06fbfb60bd3318) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1242.wav using Guid(46b9e448015a64b6ba06fbfb60bd3318) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'be4348958ef03bb64fe0b85c1616951b') in 0.0340059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1272.wav
+  artifactKey: Guid(69b4feaeeea884cad97de63fe280cbeb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1272.wav using Guid(69b4feaeeea884cad97de63fe280cbeb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '044092d6447dba636b3fe7086b55f7d9') in 0.0343371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1275.wav
+  artifactKey: Guid(367b2123e41784547b5f532db4781029) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1275.wav using Guid(367b2123e41784547b5f532db4781029) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a1b95a79e974ccaec649026e773adcdd') in 0.0378236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1270.wav
+  artifactKey: Guid(7753eb0d53cbb4faaa299f1db02e5d7b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1270.wav using Guid(7753eb0d53cbb4faaa299f1db02e5d7b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dadb9a87d1c4196c540b714599fad2e7') in 0.0343394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1284.wav
+  artifactKey: Guid(57f0fd6283a3a4310bee74d2f5c02ee6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1284.wav using Guid(57f0fd6283a3a4310bee74d2f5c02ee6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f6464f2b8e3af51e72a2fdd77f6fa274') in 0.036943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1265.wav
+  artifactKey: Guid(2e2236cd9045448788f29f4f38713cea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1265.wav using Guid(2e2236cd9045448788f29f4f38713cea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2bac348efef0c2ddc11c87efd4b8db37') in 0.0361661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1240.wav
+  artifactKey: Guid(5b2e7c2d3d408487697892bd0dc04994) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1240.wav using Guid(5b2e7c2d3d408487697892bd0dc04994) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '781e96d28f5f7de6d081816b7e48ff56') in 0.0333153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1256.wav
+  artifactKey: Guid(d4192b1c6089a4194ba8d1b217951774) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1256.wav using Guid(d4192b1c6089a4194ba8d1b217951774) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd0e5b33ecc5a10045a4957ab4b0fbce8') in 0.0538975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1287.wav
+  artifactKey: Guid(94e845b117d1c4c3baf2b40dd77d1a11) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1287.wav using Guid(94e845b117d1c4c3baf2b40dd77d1a11) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '157a1fc530cd41b85a19c66847457301') in 0.0363179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1260.wav
+  artifactKey: Guid(758aeeac2b9a64f75834c6cc74fccf1c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1260.wav using Guid(758aeeac2b9a64f75834c6cc74fccf1c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '151751cb8dfb00b98f0212f746c14a8d') in 0.0374178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1243.wav
+  artifactKey: Guid(c499dad9f455240faa7c4a9964c09f3c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1243.wav using Guid(c499dad9f455240faa7c4a9964c09f3c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f15548bf470e11ddc850eec41eae86b2') in 0.0374953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1112.wav
+  artifactKey: Guid(f8e22b9c3a996449f8ef047cf67866ae) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1112.wav using Guid(f8e22b9c3a996449f8ef047cf67866ae) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '956a2abfccec15db2ddd2a1d30f5a5e8') in 0.0360905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1311.wav
+  artifactKey: Guid(4e727d6a5f5174c03a8869166aa9aa8c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1311.wav using Guid(4e727d6a5f5174c03a8869166aa9aa8c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6e990e6525573526babfe2eb1ee44a31') in 0.0375232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1338.wav
+  artifactKey: Guid(15f4c1efa3a8c4af38729bc37cd4de01) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1338.wav using Guid(15f4c1efa3a8c4af38729bc37cd4de01) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '42d101d3da7c79609276f183114b6abd') in 0.032568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1304.wav
+  artifactKey: Guid(b0a155abff31a4301bdc8fd204c8d520) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1304.wav using Guid(b0a155abff31a4301bdc8fd204c8d520) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2565568b4f1b7b8ecec12c2fea53ef73') in 0.0365043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1333.wav
+  artifactKey: Guid(200f6aa17501b414e9f7460618168fe3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1333.wav using Guid(200f6aa17501b414e9f7460618168fe3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3b55d675f199b0124ed9a6d466eb7b69') in 0.0338973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1324.wav
+  artifactKey: Guid(645349beb0b074a5ca47de9e78862ab2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1324.wav using Guid(645349beb0b074a5ca47de9e78862ab2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ffc86335f50639672d8ea73ced27a6f1') in 0.0430093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1307.wav
+  artifactKey: Guid(38fcae0611a884e04bae248012bfd15e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1307.wav using Guid(38fcae0611a884e04bae248012bfd15e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9b17d52ed01d4d1c72f96bb88873d672') in 0.034236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1297.wav
+  artifactKey: Guid(22dfa7e47d50747949d99f88793b7168) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1297.wav using Guid(22dfa7e47d50747949d99f88793b7168) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '461dff6d6aad17f95ce56dfc63d64a5e') in 0.0375847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1329.wav
+  artifactKey: Guid(4773914bee1884fd5bb56d1aa80d6f05) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1329.wav using Guid(4773914bee1884fd5bb56d1aa80d6f05) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '02cb3eebb9cb17ead25e08071b43ca20') in 0.0360369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1317.wav
+  artifactKey: Guid(937129e0cafef428b8dacdc56a5bcb18) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1317.wav using Guid(937129e0cafef428b8dacdc56a5bcb18) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1b04c1afc8054f26381a59a992b3fcb2') in 0.033771 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Prefabs/for Locomotion/CamPos.prefab
+  artifactKey: Guid(65eb07d65eb184e13a4b388eced0d32b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Prefabs/for Locomotion/CamPos.prefab using Guid(65eb07d65eb184e13a4b388eced0d32b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a3bba810769a4e761a8cea49b79a24ff') in 0.0219887 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Documentation/ReadMe/ReadMe_jp.pdf
+  artifactKey: Guid(e793ce9481e314d228f8dbc6a9e8940f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Documentation/ReadMe/ReadMe_jp.pdf using Guid(e793ce9481e314d228f8dbc6a9e8940f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '83a7805d890e6c572119eacc87e8dcf1') in 0.0092174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1315.wav
+  artifactKey: Guid(86b4a0b23cc9649fb9f8a3787c9d2ad8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1315.wav using Guid(86b4a0b23cc9649fb9f8a3787c9d2ad8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dfb17242e0f94996b95cd0b85af3b28a') in 0.0351144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1313.wav
+  artifactKey: Guid(0bae8891cbcc04f209aea51d1233f87d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1313.wav using Guid(0bae8891cbcc04f209aea51d1233f87d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '24c0e42bcd0d061d12a1e477bc1dc270') in 0.0343282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1321.wav
+  artifactKey: Guid(47211b2a35bcf4a66a6b180b6e75cb04) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1321.wav using Guid(47211b2a35bcf4a66a6b180b6e75cb04) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3b037b0d6fa7d11e5e9901e1c98c6a8b') in 0.032715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1097.wav
+  artifactKey: Guid(a1fac12ede1df41c681ab108febfa81b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1097.wav using Guid(a1fac12ede1df41c681ab108febfa81b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cf5b10fb35b424d683eae0da5c0b3192') in 0.0355147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1293.wav
+  artifactKey: Guid(e9432b54f671747ebb900e785d426268) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1293.wav using Guid(e9432b54f671747ebb900e785d426268) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3d56ba1e5eba4faeced0ffe17f927f08') in 0.0336164 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1093.wav
+  artifactKey: Guid(14442038946004af3aaf906b64944b5f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1093.wav using Guid(14442038946004af3aaf906b64944b5f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '19e5c9e6f7ed652887b8d5feaf897cef') in 0.0376601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_group_01.prefab
+  artifactKey: Guid(2e2a7dce56b5103498b4694187a2e4e7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_group_01.prefab using Guid(2e2a7dce56b5103498b4694187a2e4e7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '113c11db640c96c3b123e70a91fbad7a') in 0.0217453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Cliffs/cliff_01.prefab
+  artifactKey: Guid(d02a52f9bab83eb489c605dfebaf95ce) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Cliffs/cliff_01.prefab using Guid(d02a52f9bab83eb489c605dfebaf95ce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '03e5430473bc1b939a3d44e6761eff0d') in 0.0238256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/Materials/light_wood_01.mat
+  artifactKey: Guid(aa43a18f609803f42878677767073393) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/Materials/light_wood_01.mat using Guid(aa43a18f609803f42878677767073393) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a81731a28ffc8d7e21e83e86a6d87efd') in 0.0161799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Buildings/house_simple_03.prefab
+  artifactKey: Guid(4f2d488708e69554686e2918c54664ea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Buildings/house_simple_03.prefab using Guid(4f2d488708e69554686e2918c54664ea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '754a391979442b8738b4d65789cd3233') in 0.0165106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/Materials/pine-trunk.mat
+  artifactKey: Guid(48d459594f2174e41945cb1765aff038) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/Materials/pine-trunk.mat using Guid(48d459594f2174e41945cb1765aff038) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f6b1be8a7a4f740ae159fa1300193019') in 0.0144734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/SplashScreen/Animations/Voice.anim
+  artifactKey: Guid(62ab4018993ae47b9a2a4b0d86b52035) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/SplashScreen/Animations/Voice.anim using Guid(62ab4018993ae47b9a2a4b0d86b52035) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '993b57f6f02d6f1ce920f7d3a1194763') in 0.0142288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/SplashScreen/Animations/FadeOut.anim
+  artifactKey: Guid(2945d5f95b61c458c9651895a514de58) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/SplashScreen/Animations/FadeOut.anim using Guid(2945d5f95b61c458c9651895a514de58) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b7fcfaff0f814e02c87c0b7b133498c6') in 0.0160166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc/firewoods_01.prefab
+  artifactKey: Guid(ddf21a2041be44c4b84c85abb4e4c3a9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Misc/firewoods_01.prefab using Guid(ddf21a2041be44c4b84c85abb4e4c3a9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eaaa28966424532d917364c096694859') in 0.022677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Buildings/house_simple_nightlights_02.prefab
+  artifactKey: Guid(150cb4b70a28e9f4bb38aeb7fdbca262) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Buildings/house_simple_nightlights_02.prefab using Guid(150cb4b70a28e9f4bb38aeb7fdbca262) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b43341a5d72382c9a26960d5208db6fc') in 0.019188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/Materials/dark_wood_01.mat
+  artifactKey: Guid(615535c23891d8545a6df647d0080395) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/Materials/dark_wood_01.mat using Guid(615535c23891d8545a6df647d0080395) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c9a5ec58e5e02af022e9a19c0490c282') in 0.0137434 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Cliffs/clifftop_01.prefab
+  artifactKey: Guid(166fa84394171cf419c82289de2f2fc2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Cliffs/clifftop_01.prefab using Guid(166fa84394171cf419c82289de2f2fc2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '42fdea3abf695956c5802ae3091bcc0b') in 0.0234388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/Materials/window_01_nightlight.mat
+  artifactKey: Guid(3e72ca3e348e07845a8b5092b2463079) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/Materials/window_01_nightlight.mat using Guid(3e72ca3e348e07845a8b5092b2463079) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0a47467766cc8510a675ed23ec839bbb') in 0.0125681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Prefabs/for Locomotion/Main Camera.prefab
+  artifactKey: Guid(79674db77adfc4d6f9f17fb043493b1e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Prefabs/for Locomotion/Main Camera.prefab using Guid(79674db77adfc4d6f9f17fb043493b1e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '28d8ee63a0f81473e423133814920fc2') in 0.0422856 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Buildings/house_long_nightlights_02.prefab
+  artifactKey: Guid(5db6a055f739fb445b08f16046d8f5d6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Buildings/house_long_nightlights_02.prefab using Guid(5db6a055f739fb445b08f16046d8f5d6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1ef26bfc9af2899e3ceeab5816026141') in 0.0177746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Materials/Right.mat
+  artifactKey: Guid(88157e674d7d0314db76940c73b69405) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Materials/Right.mat using Guid(88157e674d7d0314db76940c73b69405) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6c3546d97c527eb68d09692faaf9b155') in 0.0135446 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Cartoon SportCar B01/animation/door_front_L_SC.controller
+  artifactKey: Guid(3d9659fa2420c2040a4b0c5be1947d2a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cartoon SportCar B01/animation/door_front_L_SC.controller using Guid(3d9659fa2420c2040a4b0c5be1947d2a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4fe2c8877311ad98934a23482811d8b6') in 0.0156734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/sky5X/sky5X_textures/skyX52-x.png
+  artifactKey: Guid(f21555550245a7d40a2fdc7cabed71be) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/sky5X/sky5X_textures/skyX52-x.png using Guid(f21555550245a7d40a2fdc7cabed71be) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd7af86a43ff678990327ee9fe75d8aa5') in 0.0326236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1046.wav
+  artifactKey: Guid(96bf8a64a8a9143f89246c5222df54ba) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1046.wav using Guid(96bf8a64a8a9143f89246c5222df54ba) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '038600b9cfc642760757b0776f47dbe9') in 0.036982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/sky5X/sky5X_textures/skyX53-y.png
+  artifactKey: Guid(b7cd9fbb5ae5e7a4bad1091bd6724b9f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/sky5X/sky5X_textures/skyX53-y.png using Guid(b7cd9fbb5ae5e7a4bad1091bd6724b9f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9d727cd2a056d29a597a714b26832ce2') in 0.0208382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Models/streetlamp_01.dae
+  artifactKey: Guid(25b0281b4b5170a41a80e9e602dba67f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Models/streetlamp_01.dae using Guid(25b0281b4b5170a41a80e9e602dba67f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '367f628ea1b1c5c6fcf1f26818d8273f') in 0.0204311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1036.wav
+  artifactKey: Guid(84ee1f63e62794ce592a506085b8dd87) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1036.wav using Guid(84ee1f63e62794ce592a506085b8dd87) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0dc6620e47002310e51b17dc3a79156e') in 0.0399166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/sap@unitychan.anim
+  artifactKey: Guid(ff0ec808b24b748e482e13ebfc9305ad) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/sap@unitychan.anim using Guid(ff0ec808b24b748e482e13ebfc9305ad) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '27a3fbfafac01f5c4a1b929e13621c67') in 0.0159506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/cheek_00.tga
+  artifactKey: Guid(89ede59217e3847c39c444f223f4084e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/cheek_00.tga using Guid(89ede59217e3847c39c444f223f4084e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0e7a08da9141b0f0039e6301975d999a') in 0.0233913 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Materials/eye_L1.mat
+  artifactKey: Guid(a0186681a218f4550a84e6f0488e8b61) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Materials/eye_L1.mat using Guid(a0186681a218f4550a84e6f0488e8b61) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4b31db484f68fb510b3b190515db1626') in 0.0170918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Animations/Animators/UnityChanARPose.controller
+  artifactKey: Guid(3173dc991e314594abd6180b45c49c92) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Animations/Animators/UnityChanARPose.controller using Guid(3173dc991e314594abd6180b45c49c92) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '599359242e8299e562704a1a5931191c') in 0.0466569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 162
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/body_01.tga
+  artifactKey: Guid(f9c6074c5a78e71448f9efd3013cadda) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/body_01.tga using Guid(f9c6074c5a78e71448f9efd3013cadda) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ec6a18314bb9251d6a50e9b1a92a349f') in 0.0191217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/default@unitychan.anim
+  artifactKey: Guid(6394472d24c9347e5bb789ec1f15e5bb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/default@unitychan.anim using Guid(6394472d24c9347e5bb789ec1f15e5bb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'beb6a26615d0d3f6f7537ceb7f6eedef') in 0.0164595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Cartoon SportCar B01/Standard Assets/script/CrossPlatformInput/Scripts/AxisTouchButton.cs
+  artifactKey: Guid(9ab98b66288df7b4fa182075f2f12bd6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cartoon SportCar B01/Standard Assets/script/CrossPlatformInput/Scripts/AxisTouchButton.cs using Guid(9ab98b66288df7b4fa182075f2f12bd6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '780c737fe65baa465ac92efabdeb8aea') in 0.014521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Stage/Materials/unitychan_tile5.mat
+  artifactKey: Guid(0fabbaa20a36d468a84e4925db02ecc5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Stage/Materials/unitychan_tile5.mat using Guid(0fabbaa20a36d468a84e4925db02ecc5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '196f9acce6f0205ea62dab16609295e7') in 0.0230123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/ENV2.tga
+  artifactKey: Guid(763c5d30206d1d54a9b49b3309e37fe1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/ENV2.tga using Guid(763c5d30206d1d54a9b49b3309e37fe1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '056ce978d41970a47acb12b3c83dedf1') in 0.0218451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Stage/Textures/unitychan_tile4.png
+  artifactKey: Guid(42b4ccc65ecc7874e84c7e9a7a3d2a16) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Stage/Textures/unitychan_tile4.png using Guid(42b4ccc65ecc7874e84c7e9a7a3d2a16) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8c76e383ff4cf70389384b5c97feaa81') in 0.0234537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Stage/Textures/unitychan_tile3.png
+  artifactKey: Guid(0c13bdfc1ad5def4aa6650ca8a1568e5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Stage/Textures/unitychan_tile3.png using Guid(0c13bdfc1ad5def4aa6650ca8a1568e5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '57a8a3dbb958c03d5e258673851d9a7c') in 0.0196748 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/MTH_U.anim
+  artifactKey: Guid(69a5af149623d4592b3764b7cb6a7482) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/MTH_U.anim using Guid(69a5af149623d4592b3764b7cb6a7482) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4fbd8bee13103573752c3f4519d28ce1') in 0.0157739 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Stage/Materials/unitychan_tile4.mat
+  artifactKey: Guid(0f2978993cddc449c99a4e1893ed3479) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Stage/Materials/unitychan_tile4.mat using Guid(0f2978993cddc449c99a4e1893ed3479) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1f6f1bc96a92a31ca58cb91f562ac019') in 0.0181893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Shader/Unitychan_chara_hada_blend.shader
+  artifactKey: Guid(7a95784c68f03494d8c7911e15fab82a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Shader/Unitychan_chara_hada_blend.shader using Guid(7a95784c68f03494d8c7911e15fab82a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e7d786cb1ae1f0ee1ffcdf391c5f4ef') in 0.0158327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_small_02.prefab
+  artifactKey: Guid(22285211884fa0f4fac1852a8719b9d2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Rocks/rock_small_02.prefab using Guid(22285211884fa0f4fac1852a8719b9d2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1af635b0b570b87cc4bd2f2fa3154bab') in 0.0224872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/MTH_O.anim
+  artifactKey: Guid(8564dc45968774e70ad835503fda627e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/MTH_O.anim using Guid(8564dc45968774e70ad835503fda627e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '03254f7c5ef4534d713a22370ff8c56d') in 0.0134671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/ASHAMED.anim
+  artifactKey: Guid(3555863ff4ef948e298b8d11ea795ec4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Animations/FaceAnimation/ASHAMED.anim using Guid(3555863ff4ef948e298b8d11ea795ec4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '78211c0da6b5d7167cd66421fa2cbee0') in 0.0170749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Stage/Textures/unitychan_tile6.png
+  artifactKey: Guid(44c03eb9b0d2ef34b9e7a60eec7f1b1d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Stage/Textures/unitychan_tile6.png using Guid(44c03eb9b0d2ef34b9e7a60eec7f1b1d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '90148d6472b680f9da4b07af73b251c8') in 0.0164835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/Stage/Shader/AlphaMask.shader
+  artifactKey: Guid(9da2031a78926d0489f6bdcbf31ffa53) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/Stage/Shader/AlphaMask.shader using Guid(9da2031a78926d0489f6bdcbf31ffa53) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9a4fed9ee534a6999e11239718ac8613') in 0.0143828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees/pine_tall_decorated_01.prefab
+  artifactKey: Guid(4de4ac658c9cea7479484fcb0a37d916) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Zololgo/PaperLands Winter Village/Prefabs/Trees/pine_tall_decorated_01.prefab using Guid(4de4ac658c9cea7479484fcb0a37d916) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5af33b3dc928f1a7d8157fa278e8d4ff') in 0.092745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0018.wav
+  artifactKey: Guid(9386c5176a28d485f9f58d1031791d32) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0018.wav using Guid(9386c5176a28d485f9f58d1031791d32) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e7f7d0e3626d88a689d82fb6f37a121e') in 0.0433469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/hair_01_NRM.tga
+  artifactKey: Guid(9eea3b9b4b755f64da2c821145616f44) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/hair_01_NRM.tga using Guid(9eea3b9b4b755f64da2c821145616f44) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6268e2f45cd71a076437b40ff4260d10') in 0.0211204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Cartoon SportCar B01/Standard Assets/script/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs
+  artifactKey: Guid(9703d53e47195aa4190acd11369ccd1b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cartoon SportCar B01/Standard Assets/script/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs using Guid(9703d53e47195aa4190acd11369ccd1b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a3a32ba47d52c334c14aaf942ba645ec') in 0.0131565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Documentation/UnityChanLicense2.0/Japanese/02Unity-Chan License Terms and Condition_Summary_JP_UCL2.0.pdf
+  artifactKey: Guid(9f96030491104124fac9bfbe00bf8eea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Documentation/UnityChanLicense2.0/Japanese/02Unity-Chan License Terms and Condition_Summary_JP_UCL2.0.pdf using Guid(9f96030491104124fac9bfbe00bf8eea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5955faf8401b0e160f94cb52366b34c8') in 0.0125496 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/FO_CLOTH1.tga
+  artifactKey: Guid(cc8f70f2ec571e9478efa98c041cde7b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/FO_CLOTH1.tga using Guid(cc8f70f2ec571e9478efa98c041cde7b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b9bd54f5fa06a00e95ad3a08be409e78') in 0.0208307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/eye_iris_L_00.tga
+  artifactKey: Guid(66f06726158899242adaf95180360b7b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Art/UnityChanShader/Texture/eye_iris_L_00.tga using Guid(66f06726158899242adaf95180360b7b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7f5b79d8ef7fb12f7b6eda2244a71b66') in 0.0201885 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Documentation/UnityChanLicense2.0/Japanese/01Unity-Chan License Terms and Condition_JP_UCL2.0.pdf
+  artifactKey: Guid(f84d9c7980d3169458e696b599407b14) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Documentation/UnityChanLicense2.0/Japanese/01Unity-Chan License Terms and Condition_JP_UCL2.0.pdf using Guid(f84d9c7980d3169458e696b599407b14) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6154aeffcfc9e74c6abd46570bb16a66') in 0.010235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Documentation/UnityChanLicense2.0/License Logo/Others/png/Light_Frame.png
+  artifactKey: Guid(923fd2f82eaa9284ab1318842bb697df) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Documentation/UnityChanLicense2.0/License Logo/Others/png/Light_Frame.png using Guid(923fd2f82eaa9284ab1318842bb697df) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c7c2f2da4bc72393e5bd65b43f9a42ec') in 0.0272389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Cartoon SportCar B01/Materials/NavySmooth.mat
+  artifactKey: Guid(bccdb449802ea144b8709da9bac60356) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Cartoon SportCar B01/Materials/NavySmooth.mat using Guid(bccdb449802ea144b8709da9bac60356) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6fce06be7fe05f0bd826a106e6694282') in 0.0297443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1294.wav
+  artifactKey: Guid(138b8507a18ff4cf98f14476447f401c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ1294.wav using Guid(138b8507a18ff4cf98f14476447f401c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9bb9c7c6148827de14c2708a9eb33ffd') in 0.0331716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3219 unused Assets / (0.6 MB). Loaded Objects now: 3845.
+Memory consumption went from 128.7 MB to 128.1 MB.
+Total: 6.657000 ms (FindLiveObjects: 0.593300 ms CreateObjectMapping: 0.312500 ms MarkObjects: 4.984800 ms  DeleteObjects: 0.765200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.657 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.602 seconds
+Domain Reload Profiling: 1254ms
+	BeginReloadAssembly (231ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (341ms)
+		LoadAssemblies (357ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (117ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (103ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (602ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (396ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (309ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3224 unused Assets / (0.8 MB). Loaded Objects now: 3845.
+Memory consumption went from 130.8 MB to 130.0 MB.
+Total: 5.652400 ms (FindLiveObjects: 0.502600 ms CreateObjectMapping: 0.240200 ms MarkObjects: 3.893100 ms  DeleteObjects: 1.015400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 139.453789 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0002.wav
+  artifactKey: Guid(6ccbc3d284bd849d49fb1f8f94ab2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0002.wav using Guid(6ccbc3d284bd849d49fb1f8f94ab2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a04a588866eedcdea3a9a23451ae9822') in 0.1033943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0003.wav
+  artifactKey: Guid(d42eccd24e0ee4aef80df9398ec0747c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Unity-chan! Model/Audio/Voice/univ0003.wav using Guid(d42eccd24e0ee4aef80df9398ec0747c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e630bd8e5201a0bf57dbbb6dad0e0f38') in 0.0135901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.578 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.566 seconds
+Domain Reload Profiling: 1140ms
+	BeginReloadAssembly (196ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (308ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (117ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (104ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (566ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (362ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3224 unused Assets / (0.8 MB). Loaded Objects now: 3854.
+Memory consumption went from 132.9 MB to 132.1 MB.
+Total: 7.362600 ms (FindLiveObjects: 0.370000 ms CreateObjectMapping: 0.221800 ms MarkObjects: 5.397300 ms  DeleteObjects: 1.372500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3219 unused Assets / (0.9 MB). Loaded Objects now: 3854.
+Memory consumption went from 133.1 MB to 132.2 MB.
+Total: 8.444900 ms (FindLiveObjects: 0.563100 ms CreateObjectMapping: 0.396900 ms MarkObjects: 6.286200 ms  DeleteObjects: 1.197300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.686 seconds
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.598 seconds
+Domain Reload Profiling: 1278ms
+	BeginReloadAssembly (226ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (369ms)
+		LoadAssemblies (361ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (119ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (599ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3224 unused Assets / (0.6 MB). Loaded Objects now: 3854.
+Memory consumption went from 134.8 MB to 134.2 MB.
+Total: 5.997600 ms (FindLiveObjects: 0.643200 ms CreateObjectMapping: 0.299000 ms MarkObjects: 4.258900 ms  DeleteObjects: 0.795300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3219 unused Assets / (0.8 MB). Loaded Objects now: 3854.
+Memory consumption went from 135.0 MB to 134.2 MB.
+Total: 5.526200 ms (FindLiveObjects: 0.387300 ms CreateObjectMapping: 0.204800 ms MarkObjects: 3.975800 ms  DeleteObjects: 0.957600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.696 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.638 seconds
+Domain Reload Profiling: 1330ms
+	BeginReloadAssembly (191ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (418ms)
+		LoadAssemblies (402ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (108ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (639ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (416ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (328ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3224 unused Assets / (0.8 MB). Loaded Objects now: 3854.
+Memory consumption went from 136.8 MB to 135.9 MB.
+Total: 5.612500 ms (FindLiveObjects: 0.376400 ms CreateObjectMapping: 0.210500 ms MarkObjects: 4.065900 ms  DeleteObjects: 0.958700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.559 seconds
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.557 seconds
+Domain Reload Profiling: 1112ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (296ms)
+		LoadAssemblies (286ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (112ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (102ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (558ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (358ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3224 unused Assets / (0.8 MB). Loaded Objects now: 3854.
+Memory consumption went from 138.7 MB to 137.9 MB.
+Total: 6.210200 ms (FindLiveObjects: 0.482800 ms CreateObjectMapping: 0.236900 ms MarkObjects: 4.583900 ms  DeleteObjects: 0.905400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 221.680420 seconds.
+  path: Assets/Cartoon SportCar B01/Standard Assets/Prefab/FreeLookCameraRig.prefab
+  artifactKey: Guid(49a0e923d39ec3c4c8bb97699e2f2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon SportCar B01/Standard Assets/Prefab/FreeLookCameraRig.prefab using Guid(49a0e923d39ec3c4c8bb97699e2f2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bf3eb422d7456afeec44b0f96a528ad') in 0.0656484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Cartoon SportCar B01/Standard Assets/Prefab/SkidTrail.prefab
+  artifactKey: Guid(4b6aa99de5d21424eab6ae279f31475b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon SportCar B01/Standard Assets/Prefab/SkidTrail.prefab using Guid(4b6aa99de5d21424eab6ae279f31475b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d8e5371aacab45fd76353c5eb3f591e') in 0.0494986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

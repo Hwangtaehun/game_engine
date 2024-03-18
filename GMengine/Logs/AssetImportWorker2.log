@@ -15,7 +15,7 @@ D:/Github/game_engine/GMengine
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-54798
+55835
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/Github/game_engine/GMengine
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [44576] Host "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2538390726 [EditorId] 2538390726 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [44576] Host "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2538390726 [EditorId] 2538390726 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [43736] Host "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2973194452 [EditorId] 2973194452 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [43736] Host "[IP] 192.168.45.226 [Port] 0 [Flags] 2 [Guid] 2973194452 [EditorId] 2973194452 [Version] 1048832 [Id] WindowsEditor(7,transferscholarship) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.13f1 (70197a359f36)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -93,41 +93,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005124 seconds.
-- Loaded All Assemblies, in  0.432 seconds
+Registered in 0.003946 seconds.
+- Loaded All Assemblies, in  0.628 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.312 seconds
-Domain Reload Profiling: 741ms
-	BeginReloadAssembly (137ms)
+- Finished resetting the current domain, in  0.377 seconds
+Domain Reload Profiling: 1001ms
+	BeginReloadAssembly (267ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (197ms)
-		LoadAssemblies (133ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (260ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (195ms)
-			TypeCache.Refresh (194ms)
-				TypeCache.ScanAssembly (173ms)
+		AnalyzeDomain (241ms)
+			TypeCache.Refresh (240ms)
+				TypeCache.ScanAssembly (220ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (313ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (378ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (263ms)
+		SetupLoadedEditorAssemblies (321ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (9ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (191ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
+			BeforeProcessingInitializeOnLoad (11ms)
+			ProcessInitializeOnLoadAttributes (234ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -150,50 +150,50 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.939 seconds
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.061 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.581 seconds
-Domain Reload Profiling: 1514ms
-	BeginReloadAssembly (401ms)
+- Finished resetting the current domain, in  0.631 seconds
+Domain Reload Profiling: 1687ms
+	BeginReloadAssembly (432ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (32ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (47ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (452ms)
-		LoadAssemblies (376ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (523ms)
+		LoadAssemblies (405ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (184ms)
-			TypeCache.Refresh (152ms)
-				TypeCache.ScanAssembly (136ms)
+		AnalyzeDomain (230ms)
+			TypeCache.Refresh (197ms)
+				TypeCache.ScanAssembly (180ms)
 			BuildScriptInfoCaches (26ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (581ms)
+	FinalizeReload (632ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (394ms)
+		SetupLoadedEditorAssemblies (420ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (316ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (340ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (16ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 41 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3188 unused Assets / (0.8 MB). Loaded Objects now: 3804.
-Memory consumption went from 137.6 MB to 136.8 MB.
-Total: 5.405000 ms (FindLiveObjects: 0.373800 ms CreateObjectMapping: 0.169900 ms MarkObjects: 4.048000 ms  DeleteObjects: 0.812500 ms)
+Unloading 3188 unused Assets / (0.9 MB). Loaded Objects now: 3804.
+Memory consumption went from 137.5 MB to 136.6 MB.
+Total: 6.066900 ms (FindLiveObjects: 0.403000 ms CreateObjectMapping: 0.183800 ms MarkObjects: 4.605100 ms  DeleteObjects: 0.872200 ms)
 
 ========================================================================
 Received Prepare
@@ -212,134 +212,180 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.727 seconds
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.670 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.658 seconds
-Domain Reload Profiling: 1378ms
-	BeginReloadAssembly (222ms)
+- Finished resetting the current domain, in  0.671 seconds
+Domain Reload Profiling: 1337ms
+	BeginReloadAssembly (218ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (418ms)
-		LoadAssemblies (410ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (380ms)
+		LoadAssemblies (341ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (136ms)
-			TypeCache.Refresh (5ms)
+		AnalyzeDomain (160ms)
+			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (123ms)
+			BuildScriptInfoCaches (145ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (658ms)
+	FinalizeReload (671ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (423ms)
+		SetupLoadedEditorAssemblies (451ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (330ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (362ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3186 unused Assets / (1.0 MB). Loaded Objects now: 3804.
-Memory consumption went from 130.1 MB to 129.1 MB.
-Total: 6.727000 ms (FindLiveObjects: 0.343300 ms CreateObjectMapping: 0.492800 ms MarkObjects: 4.707500 ms  DeleteObjects: 1.181900 ms)
+Unloading 3186 unused Assets / (0.7 MB). Loaded Objects now: 3804.
+Memory consumption went from 130.0 MB to 129.2 MB.
+Total: 9.843700 ms (FindLiveObjects: 0.541100 ms CreateObjectMapping: 0.490200 ms MarkObjects: 7.430200 ms  DeleteObjects: 1.380700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 340105.542276 seconds.
-  path: Assets/image
-  artifactKey: Guid(ad7caedc590fde242a78041aed1f0965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/image using Guid(ad7caedc590fde242a78041aed1f0965) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a467a1deef08b729b8333ba4ded1b923') in 0.0102089 seconds
+  Time since last request: 340847.495181 seconds.
+  path: Assets/Script/message.cs
+  artifactKey: Guid(ab3f5756ccb51af4b866bd9b6ff4c67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/message.cs using Guid(ab3f5756ccb51af4b866bd9b6ff4c67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42563236a2d2496f075ccd065d58f47d') in 0.0075831 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.078298 seconds.
-  path: Assets/image/sound-off.png
-  artifactKey: Guid(48b0035e247123b4799df0c5187eab06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/image/sound-off.png using Guid(48b0035e247123b4799df0c5187eab06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f126bd93d41ca203bb20f4c8d8b476f') in 0.0730627 seconds
+  Time since last request: 113.526435 seconds.
+  path: Assets/image/sound-on.jpg
+  artifactKey: Guid(812893ed952096247bc98b123e7177b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/sound-on.jpg using Guid(812893ed952096247bc98b123e7177b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83c7b7f34a51e6aab1da96e645a9e622') in 0.0686683 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Github\game_engine\GMengine\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.642 seconds
-Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.577 seconds
-Domain Reload Profiling: 1213ms
-	BeginReloadAssembly (207ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (44ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (351ms)
-		LoadAssemblies (349ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (121ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (108ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (577ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (354ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (45ms)
-			ProcessInitializeOnLoadAttributes (272ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3186 unused Assets / (0.6 MB). Loaded Objects now: 3809.
-Memory consumption went from 132.6 MB to 131.9 MB.
-Total: 8.311800 ms (FindLiveObjects: 0.345900 ms CreateObjectMapping: 0.418700 ms MarkObjects: 6.385800 ms  DeleteObjects: 1.160100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 303.592024 seconds.
-  path: Assets/image/sound-on.jpg
-  artifactKey: Guid(c99636261c530194eb95ad4ead77ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/image/sound-on.jpg using Guid(c99636261c530194eb95ad4ead77ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3815f13bb6f006e5f57196341ddb2bd0') in 0.0515233 seconds
+  Time since last request: 1.288630 seconds.
+  path: Assets/image/sound-off.jpg
+  artifactKey: Guid(1e254473cea62604da1da6db9afa0a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/sound-off.jpg using Guid(1e254473cea62604da1da6db9afa0a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e857e0a255bbbdf1ff53a9c6d4dac02d') in 0.0145136 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Import Request.
+  Time since last request: 9.946127 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Animals_Sign.prefab
+  artifactKey: Guid(0f2e0f4ee7964964d8ecedce134fc290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Animals_Sign.prefab using Guid(0f2e0f4ee7964964d8ecedce134fc290) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5496a55b218e78905e8d6cee81ca0f5') in 0.0612787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Intersection_T.prefab
+  artifactKey: Guid(9306ccfe044ed9d4ab477322043fdb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Intersection_T.prefab using Guid(9306ccfe044ed9d4ab477322043fdb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1517acaa253fa5d0627caa0ae756537f') in 0.0122232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Grass_02.prefab
+  artifactKey: Guid(32d9569a6e9f7bb449727a7fc463ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Grass_02.prefab using Guid(32d9569a6e9f7bb449727a7fc463ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68fa6abd89c9dbba90bb75e84d15ae27') in 0.01402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Straight.prefab
+  artifactKey: Guid(b8c83e1f89fb1f343b74be7bb3f38303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Straight.prefab using Guid(b8c83e1f89fb1f343b74be7bb3f38303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e46f1ab0e6919efef5eb837e71de1c3') in 0.0169883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Rock_3.prefab
+  artifactKey: Guid(bd3902d22e225d2418a3fb59004719d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Rock_3.prefab using Guid(bd3902d22e225d2418a3fb59004719d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90bb577eb19151c46bf50b26d4b53877') in 0.0115969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Branch_02.prefab
+  artifactKey: Guid(ebd2ed5eb87ccda49b76554d6dd91460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Branch_02.prefab using Guid(ebd2ed5eb87ccda49b76554d6dd91460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '296038eba94c4157e80e1d13d7934175') in 0.0379817 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Rock_2.prefab
+  artifactKey: Guid(72f53497a78cb094da1de89eaf990df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Rock_2.prefab using Guid(72f53497a78cb094da1de89eaf990df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93bd46538143818761ae874d88e3125b') in 0.0327042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Grass_03.prefab
+  artifactKey: Guid(6bf377fd76930b74e82198be981aad06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Grass_03.prefab using Guid(6bf377fd76930b74e82198be981aad06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a09f21ace8507e8e9d31cc669c063d4') in 0.0151999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Tree_02.prefab
+  artifactKey: Guid(7c17e9f5a62c2a5478a2ff30ca30f1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Tree_02.prefab using Guid(7c17e9f5a62c2a5478a2ff30ca30f1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6fa1af9ab608c424e1aa55f159c99baa') in 0.0147395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Pine_01.prefab
+  artifactKey: Guid(c53589fd05733bf4daa37677a3e6a829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Pine_01.prefab using Guid(c53589fd05733bf4daa37677a3e6a829) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12decf2754879d8554d0de716d159435') in 0.0210775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Rock_4.prefab
+  artifactKey: Guid(674a46ec73e215a42868c91588af4a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Rock_4.prefab using Guid(674a46ec73e215a42868c91588af4a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb649cace4fd564845553c7faf7345a5') in 0.0143959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Fence.prefab
+  artifactKey: Guid(b8497456a0162bb4fa7056f9000cf45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Fence.prefab using Guid(b8497456a0162bb4fa7056f9000cf45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5db0960c12c7cd8e04e8044d051bf809') in 0.0157147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Stylized Snow Forest/Prefabs/Straight_Pipe.prefab
+  artifactKey: Guid(47aa73de0db42a24c90deb4a8c55b88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Snow Forest/Prefabs/Straight_Pipe.prefab using Guid(47aa73de0db42a24c90deb4a8c55b88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3175c7290745a7e9dcdd43e4e0199335') in 0.0151439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
