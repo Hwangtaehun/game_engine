@@ -417,6 +417,7 @@
 "Assets/Cartoon SportCar B01/Standard Assets/script/VignetteAndChromaticAberration.cs"
 "Assets/Cartoon SportCar B01/Standard Assets/script/WheelEffects.cs"
 "Assets/Script/message.cs"
+"Assets/Script/UI.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/CameraController.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/FaceUpdate.cs"

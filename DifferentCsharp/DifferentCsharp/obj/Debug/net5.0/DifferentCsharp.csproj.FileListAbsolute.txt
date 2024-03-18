@@ -1,0 +1,16 @@
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.csproj.AssemblyReference.cache
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.AssemblyInfoInputs.cache
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.AssemblyInfo.cs
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.csproj.CoreCompileInputs.cache
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\bin\Debug\net5.0\DifferentCsharp.exe
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\bin\Debug\net5.0\DifferentCsharp.deps.json
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\bin\Debug\net5.0\DifferentCsharp.runtimeconfig.json
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\bin\Debug\net5.0\DifferentCsharp.runtimeconfig.dev.json
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\bin\Debug\net5.0\DifferentCsharp.dll
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\bin\Debug\net5.0\ref\DifferentCsharp.dll
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\bin\Debug\net5.0\DifferentCsharp.pdb
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.dll
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\ref\DifferentCsharp.dll
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.pdb
+D:\Github\game_engine\DifferentCsharp\DifferentCsharp\obj\Debug\net5.0\DifferentCsharp.genruntimeconfig.cache
