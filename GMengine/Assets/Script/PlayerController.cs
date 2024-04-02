@@ -8,15 +8,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        int key = 0;
+        float speed = 10.0f;
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            key = 1;
+            transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
-            key = -1;
+            transform.Translate(speed * Time.deltaTime, 0, 0);
         }
     }
 }
