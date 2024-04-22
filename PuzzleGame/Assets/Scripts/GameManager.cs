@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private Transform gameTrnasform;
+    [SerializeField] private Transform gameTransform;
     [SerializeField] private Transform piecePrefab;
 
     private List<Transform> pieces;
     private int emptyLocation;
     private int size;
-    private bool shuffing = false;
+    private bool shuffling = false;
 
     private void CreateGamePieces(float gapThinckness)
     {
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         {
             for(int col = 0; col < size; col++)
             {
-                Transform piece = Instantiate(piecePrefab, gameTrnasform);
+                Transform piece = Instantiate(piecePrefab, gameTransform);
                 pieces.Add(piece);
                 piece.localPosition = new Vector3(-1 + (2 * width * col) + width, +1 - (2 * width * row) - width, 0);
                 piece.localScale = ((2 * width) - gapThinckness) * Vector3.one;
@@ -57,10 +57,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!shuffing && CheckCompletion())
+        if(!shuffling && CheckCompletion())
         {
-            shuffing = true;
-            StartCoroutine((String)WaitShuffle(0.5f));
+            shuffling = true;
+            StartCoroutine(WaitShuffle(0.5f));
         }
 
         if(Input.GetMouseButtonDown(0))
@@ -72,22 +72,23 @@ public class GameManager : MonoBehaviour
                 {
                     if(pieces[i] == hit.transform)
                     {
-                        if (SwapIfVaild(1, -size, size)) { break; }
-                        if (SwapIfVaild(1, +size, size)) { break; }
-                        if (SwapIfVaild(1, -1, 0)) { break; }
-                        if (SwapIfVaild(1, +1, size - 1)) { break; }
+                        if (SwapIfValid(1, -size, size)) { break; }
+                        if (SwapIfValid(1, +size, size)) { break; }
+                        if (SwapIfValid(1, -1, 0)) { break; }
+                        if (SwapIfValid(1, +1, size - 1)) { break; }
                     }
                 }
             }
         }
     }
 
-    private bool SwapIfVaild(int i, int offset, int colCheck)
+    private bool SwapIfValid(int i, int offset, int colCheck)
     {
         if (((i % size) != colCheck) && ((i + offset) == emptyLocation))
         {
             (pieces[i], pieces[i + offset]) = (pieces[i + offset], pieces[i]);
             (pieces[i].localPosition, pieces[i + offset].localPosition) = ((pieces[i + offset].localPosition, pieces[i].localPosition));
+            emptyLocation = i;
             return true;
         }
         return false;
@@ -106,11 +107,11 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    private IEnumerable WaitShuffle(float duration)
+    private IEnumerator WaitShuffle(float duration)
     {
         yield return new WaitForSeconds(duration);
         Shuffle();
-        shuffing = false;
+        shuffling = false;
     }
 
     private void Shuffle()
@@ -123,19 +124,19 @@ public class GameManager : MonoBehaviour
             int rnd = UnityEngine.Random.Range(0, size * size);
             if(rnd == last) { continue; }
             last = emptyLocation;
-            if(SwapIfVaild(rnd, -size, size))
+            if(SwapIfValid(rnd, -size, size))
             {
                 count++;
             }
-            else if(SwapIfVaild(rnd, +size, size))
+            else if(SwapIfValid(rnd, +size, size))
             {
                 count++;
             }
-            else if(SwapIfVaild(rnd, -1, 0))
+            else if(SwapIfValid(rnd, -1, 0))
             {
                 count++;
             }
-            else if(SwapIfVaild(rnd, +1, size - 1))
+            else if(SwapIfValid(rnd, +1, size - 1))
             {
                 count++;
             }
