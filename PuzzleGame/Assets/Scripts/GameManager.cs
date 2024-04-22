@@ -72,10 +72,10 @@ public class GameManager : MonoBehaviour
                 {
                     if(pieces[i] == hit.transform)
                     {
-                        if (SwapIfValid(1, -size, size)) { break; }
-                        if (SwapIfValid(1, +size, size)) { break; }
-                        if (SwapIfValid(1, -1, 0)) { break; }
-                        if (SwapIfValid(1, +1, size - 1)) { break; }
+                        if (SwapIfValid(i, -size, size)) { break; }
+                        if (SwapIfValid(i, +size, size)) { break; }
+                        if (SwapIfValid(i, -1, 0)) { break; }
+                        if (SwapIfValid(i, +1, size - 1)) { break; }
                     }
                 }
             }
