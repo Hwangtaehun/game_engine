@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BulletGenerator : MonoBehaviour
 {
-    public GameObject bulletPrefab;
-    public float speed = 200.0f;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float speed = 200.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class BulletGenerator : MonoBehaviour
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
-            bullet.GetComponent<BulletController>().Shoot(new Vector3(0, 0, speed));
+            bullet.GetComponent<BulletController>().Shoot(speed);
         }
     }
 }

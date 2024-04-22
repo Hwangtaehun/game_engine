@@ -6,13 +6,16 @@ using TMPro;
 
 public class UI : MonoBehaviour
 {
+    private bool isPause;
     private float time;
-    public TMP_Text text;
+    [SerializeField] private TMP_Text text;
+    [SerializeField] private GameObject panel;
 
     // Start is called before the first frame update
     void Start()
     {
         time = 0f;
+        isPause = false;
     }
 
     // Update is called once per frame
@@ -33,5 +36,21 @@ public class UI : MonoBehaviour
             second = (int)time;
             text.text = second.ToString() + "√ ";
         }
+
+        if (isPause)
+        {
+            Time.timeScale = 0;
+            panel.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            panel.SetActive(false);
+        }
+    }
+
+    public void ControllerOption()
+    {
+        isPause = !isPause;
     }
 }

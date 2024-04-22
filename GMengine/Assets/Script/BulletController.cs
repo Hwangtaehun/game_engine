@@ -19,16 +19,16 @@ public class BulletController : MonoBehaviour
         }
     }
 
-    public void Shoot(Vector3 dir)
+    public void Shoot(float speed)
     {
-        GetComponent<Rigidbody>().AddForce(dir, ForceMode.Impulse);
+        this.GetComponent<Rigidbody>().velocity = this.transform.forward * speed;
     }
 
     private void OnCollisionEnter(Collision coll)
     {
         if(coll.collider.tag == "ENEMY")
         {
-            GameObject manager = GameObject.Find("ScoreManager");
+            GameObject manager = GameObject.Find("GameManager");
             manager.GetComponent<ScoreManager>().IncScore();
 
             GameObject enemyGenerator = GameObject.Find("EnemyGenerator");
