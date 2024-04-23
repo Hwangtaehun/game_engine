@@ -26,9 +26,9 @@ public class BulletController : MonoBehaviour
     {
         if(coll.collider.tag == "ENEMY")
         {
+            coll.gameObject.GetComponent<ParticleSystem>().Play();
             GameObject manager = GameObject.Find("GameManager");
             manager.GetComponent<ScoreManager>().IncScore();
-            GetComponent<ParticleSystem>().Play();
             GameObject enemyGenerator = GameObject.Find("EnemyGenerator");
             enemyGenerator.GetComponent<EnemyGenerator>().makeEmeny();
             Destroy(gameObject, 0.2f);
