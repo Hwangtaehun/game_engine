@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(transform.position.x < -100.0f || transform.position.x > 100.0f)
@@ -30,7 +28,7 @@ public class BulletController : MonoBehaviour
         {
             GameObject manager = GameObject.Find("GameManager");
             manager.GetComponent<ScoreManager>().IncScore();
-
+            GetComponent<ParticleSystem>().Play();
             GameObject enemyGenerator = GameObject.Find("EnemyGenerator");
             enemyGenerator.GetComponent<EnemyGenerator>().makeEmeny();
             Destroy(gameObject, 0.2f);
