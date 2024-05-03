@@ -31,4 +31,14 @@ public:
 	class USpringArmComponent* springArmComp;
 	UPROPERTY(VisibleAnywhere, Category=Camera)
 	class UCameraComponent* tpsCamComp;
+	UPROPERTY(EditAnywhere, Category = PlayerSetting)
+	float walkSpeed = 600;
+	FVector direction;
+
+	void Turn(float value);
+	void LookUp(float value);
+	void InputHorisontal(float value);
+	void InputVertical(float value);
+	void InputJump();
+	void Move();
 };

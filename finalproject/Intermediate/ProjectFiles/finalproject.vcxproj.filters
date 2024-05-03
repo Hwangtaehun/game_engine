@@ -36,6 +36,9 @@
     <Filter Include="Source\finalproject\Private">
       <UniqueIdentifier>{08C71C4B-AE20-3C3E-8DCA-42B120FBFF80}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\finalproject\Private\Bullet.cpp">
+      <Filter>Source\finalproject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\finalproject\Private\finalproject.cpp">
       <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
@@ -48,6 +51,9 @@
     <Filter Include="Source\finalproject\Public">
       <UniqueIdentifier>{BC5B9346-CD4A-31DA-B553-D2042911610E}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\finalproject\Public\Bullet.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\finalproject\Public\finalproject.h">
       <Filter>Source\finalproject\Public</Filter>
     </ClInclude>

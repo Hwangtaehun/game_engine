@@ -115,6 +115,11 @@
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
     <None Include="..\..\Source\finalproject\finalproject.Build.cs"/>
+    <ClCompile Include="..\..\Source\finalproject\Private\Bullet.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\finalproject\Private\finalproject.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -130,6 +135,7 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClInclude Include="..\..\Source\finalproject\Public\Bullet.h"/>
     <ClInclude Include="..\..\Source\finalproject\Public\finalproject.h"/>
     <ClInclude Include="..\..\Source\finalproject\Public\finalprojectGameModeBase.h"/>
     <ClInclude Include="..\..\Source\finalproject\Public\TPSPlayer.h"/>
