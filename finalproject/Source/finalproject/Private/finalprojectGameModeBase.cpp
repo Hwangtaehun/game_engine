@@ -2,4 +2,11 @@
 
 
 #include "finalprojectGameModeBase.h"
+#include "finalproject.h"
 
+AfinalprojectGameModeBase::AfinalprojectGameModeBase()
+{
+	PRINT_LOG(TEXT("My Log : %s"), TEXT("TPS project!!"));
+}
+
+AfinalprojectGameModeBase::~AfinalprojectGameModeBase() {}

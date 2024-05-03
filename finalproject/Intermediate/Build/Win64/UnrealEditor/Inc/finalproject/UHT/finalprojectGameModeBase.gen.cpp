@@ -77,9 +77,7 @@ void EmptyLinkFunctionForGeneratedCodefinalprojectGameModeBase() {}
 	{
 		return AfinalprojectGameModeBase::StaticClass();
 	}
-	AfinalprojectGameModeBase::AfinalprojectGameModeBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AfinalprojectGameModeBase);
-	AfinalprojectGameModeBase::~AfinalprojectGameModeBase() {}
 	struct Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_finalprojectGameModeBase_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
