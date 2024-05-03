@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\finalproject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\finalproject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\finalprojectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\finalproject">
+      <UniqueIdentifier>{4FB1C9E2-0069-3A41-97C6-C4474F7022F4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\finalproject\finalproject.Build.cs">
+      <Filter>Source\finalproject</Filter>
+    </None>
+    <Filter Include="Source\finalproject\private">
+      <UniqueIdentifier>{5C0EA324-1D83-37A9-91AA-E650B3D20CAD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\finalproject\private\finalproject.h">
+      <Filter>Source\finalproject\private</Filter>
+    </ClInclude>
+    <Filter Include="Source\finalproject\public">
+      <UniqueIdentifier>{CED17F57-40ED-3CA4-A36A-644B31D49BC2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\finalproject\public\finalproject.cpp">
+      <Filter>Source\finalproject\public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
