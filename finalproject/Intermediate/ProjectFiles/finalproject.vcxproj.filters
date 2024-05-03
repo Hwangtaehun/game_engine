@@ -33,17 +33,29 @@
     <None Include="..\..\Source\finalproject\finalproject.Build.cs">
       <Filter>Source\finalproject</Filter>
     </None>
-    <Filter Include="Source\finalproject\private">
-      <UniqueIdentifier>{5C0EA324-1D83-37A9-91AA-E650B3D20CAD}</UniqueIdentifier>
+    <Filter Include="Source\finalproject\Private">
+      <UniqueIdentifier>{08C71C4B-AE20-3C3E-8DCA-42B120FBFF80}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\finalproject\private\finalproject.h">
-      <Filter>Source\finalproject\private</Filter>
-    </ClInclude>
-    <Filter Include="Source\finalproject\public">
-      <UniqueIdentifier>{CED17F57-40ED-3CA4-A36A-644B31D49BC2}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\finalproject\public\finalproject.cpp">
-      <Filter>Source\finalproject\public</Filter>
+    <ClCompile Include="..\..\Source\finalproject\Private\finalproject.cpp">
+      <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\finalproject\Private\finalprojectGameModeBase.cpp">
+      <Filter>Source\finalproject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\finalproject\Private\TPSPlayer.cpp">
+      <Filter>Source\finalproject\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\finalproject\Public">
+      <UniqueIdentifier>{BC5B9346-CD4A-31DA-B553-D2042911610E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\finalproject\Public\finalproject.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\finalproject\Public\finalprojectGameModeBase.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\finalproject\Public\TPSPlayer.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
