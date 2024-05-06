@@ -30,4 +30,10 @@ public:
 	class USphereComponent* collisionComp;
 	UPROPERTY(VisibleAnywhere)
 	class UStaticMeshComponent* bodyMeshComp;
+	//ÃÑ¾Ë ¼Óµµ
+	UPROPERTY(EditAnywhere, Category=Setting)
+	float speed = 5000;
+
+	void Die();
+	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 };
