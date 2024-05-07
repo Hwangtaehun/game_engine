@@ -5,6 +5,8 @@
 #include "Bullet.h"
 #include <GameFramework/SpringArmComponent.h>
 #include <Camera/CameraComponent.h>
+#include <Blueprint/UserWidget.h>
+#include <Kismet/GameplayStatics.h>
 
 // Sets default values
 ATPSPlayer::ATPSPlayer()
@@ -54,7 +56,11 @@ ATPSPlayer::ATPSPlayer()
 void ATPSPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	_sniperUI = CreateWidget(GetWorld(), sniperUIFactory);
+	_crosshairUI = CreateWidget(GetWorld(), crosshairUIFactory);
+	_crosshairUI->AddToViewport();
+
 	ChangeToSniperGun();
 }
 
@@ -79,6 +85,8 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ATPSPlayer::InputFire);
 	PlayerInputComponent->BindAction(TEXT("GrenadeGun"), IE_Pressed, this, &ATPSPlayer::ChangeToGrenadeGun);
 	PlayerInputComponent->BindAction(TEXT("SniperGun"), IE_Pressed, this, &ATPSPlayer::ChangeToSniperGun);
+	PlayerInputComponent->BindAction(TEXT("Sniper"), IE_Pressed, this, &ATPSPlayer::SniperAim);
+	PlayerInputComponent->BindAction(TEXT("Sniper"), IE_Released, this, &ATPSPlayer::SniperAim);
 }
 
 void ATPSPlayer::Turn(float value)
@@ -115,8 +123,32 @@ void ATPSPlayer::Move()
 
 void ATPSPlayer::InputFire()
 {
-	FTransform firePosition = gunMeshComp->GetSocketTransform(TEXT("FirePosition"));
-	GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition);
+	if (bUsingGrenadeGun) {
+		FTransform firePosition = gunMeshComp->GetSocketTransform(TEXT("FirePosition"));
+		GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition);
+	}
+	else {
+		bool bHit;
+		FVector startPos = tpsCamComp->GetComponentLocation();
+		FVector endPos = tpsCamComp->GetComponentLocation() + tpsCamComp->GetForwardVector() * 5000;
+		FHitResult hitInfo;
+		FCollisionQueryParams params;
+
+		params.AddIgnoredActor(this);
+		bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
+
+		if (bHit) {
+			FTransform bulletTrans;
+			bulletTrans.SetLocation(hitInfo.ImpactPoint);
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), bulletEffectFactory, bulletTrans);
+
+			auto hitComp = hitInfo.GetComponent();
+			if (hitComp && hitComp->IsSimulatingPhysics()) {
+				FVector force = -hitInfo.ImpactNormal * hitComp->GetMass() * 500000;
+				hitComp->AddForce(force);
+			}
+		}
+	}
 }
 
 void ATPSPlayer::ChangeToGrenadeGun()
@@ -131,4 +163,24 @@ void ATPSPlayer::ChangeToSniperGun()
 	bUsingGrenadeGun = false;
 	sniperGunComp->SetVisibility(true);
 	gunMeshComp->SetVisibility(false);
+}
+
+void ATPSPlayer::SniperAim()
+{
+	if (bUsingGrenadeGun) {
+		return;
+	}
+
+	if (bSniperAim == false) {
+		bSniperAim = true;
+		_sniperUI->AddToViewport();
+		tpsCamComp->SetFieldOfView(45.0f);
+		_crosshairUI->RemoveFromParent();
+	}
+	else {
+		bSniperAim = false;
+		_sniperUI->RemoveFromParent();
+		tpsCamComp->SetFieldOfView(90.0f);
+		_crosshairUI->AddToViewport();
+	}
 }

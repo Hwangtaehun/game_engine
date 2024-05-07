@@ -29,7 +29,7 @@ public:
 public:
 	UPROPERTY(VisibleAnywhere, Category=Camera)
 	class USpringArmComponent* springArmComp;
-	UPROPERTY(VisibleAnywhere, Category=Camera)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	class UCameraComponent* tpsCamComp;
 	UPROPERTY(EditAnywhere, Category=PlayerSetting)
 	float walkSpeed = 600;
@@ -39,8 +39,17 @@ public:
 	TSubclassOf<class ABullet> bulletFactory;
 	UPROPERTY(VisibleAnywhere, Category=GunMesh)
 	class UStaticMeshComponent* sniperGunComp;
+	UPROPERTY(EditDefaultsOnly, Category=SniperUI)
+	TSubclassOf<class UUserWidget> sniperUIFactory;
+	UPROPERTY(EditAnywhere, Category=BulletEffect)
+	class UParticleSystem* bulletEffectFactory;
+	UPROPERTY(EditDefaultsOnly, Category = SniperUI)
+	TSubclassOf<class UUserWidget> crosshairUIFactory;
+	class UUserWidget* _sniperUI;
+	class UUserWidget* _crosshairUI;
 	FVector direction;
 	bool bUsingGrenadeGun = true;
+	bool bSniperAim = false;
 
 	void Turn(float value);
 	void LookUp(float value);
@@ -51,4 +60,5 @@ public:
 	void InputFire();
 	void ChangeToGrenadeGun();
 	void ChangeToSniperGun();
+	void SniperAim();
 };
