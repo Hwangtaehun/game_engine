@@ -39,6 +39,12 @@
     <ClCompile Include="..\..\Source\finalproject\Private\Bullet.cpp">
       <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\finalproject\Private\Enemy.cpp">
+      <Filter>Source\finalproject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\finalproject\Private\EnemyFSM.cpp">
+      <Filter>Source\finalproject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\finalproject\Private\finalproject.cpp">
       <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
@@ -52,6 +58,12 @@
       <UniqueIdentifier>{BC5B9346-CD4A-31DA-B553-D2042911610E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\finalproject\Public\Bullet.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\finalproject\Public\Enemy.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\finalproject\Public\EnemyFSM.h">
       <Filter>Source\finalproject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\finalproject\Public\finalproject.h">

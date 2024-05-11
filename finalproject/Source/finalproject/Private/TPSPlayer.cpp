@@ -126,6 +126,20 @@ void ATPSPlayer::InputFire()
 	if (bUsingGrenadeGun) {
 		FTransform firePosition = gunMeshComp->GetSocketTransform(TEXT("FirePosition"));
 		GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition);
+
+		/*충격 정보 확인하는 함수*/
+		bool bHit;
+		FVector startPos = tpsCamComp->GetComponentLocation();
+		FVector endPos = tpsCamComp->GetComponentLocation() + tpsCamComp->GetForwardVector() * 5000;
+		FHitResult hitInfo;
+		FCollisionQueryParams params;
+
+		params.AddIgnoredActor(this);
+		bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
+
+		if (bHit) {
+			UE_LOG(LogTemp, Log, TEXT("hit"));
+		}
 	}
 	else {
 		bool bHit;
@@ -153,6 +167,7 @@ void ATPSPlayer::InputFire()
 
 void ATPSPlayer::ChangeToGrenadeGun()
 {
+	_crosshairUI->RemoveFromParent();
 	bUsingGrenadeGun = true;
 	sniperGunComp->SetVisibility(false);
 	gunMeshComp->SetVisibility(true);
@@ -160,6 +175,7 @@ void ATPSPlayer::ChangeToGrenadeGun()
 
 void ATPSPlayer::ChangeToSniperGun()
 {
+	_crosshairUI->AddToViewport();
 	bUsingGrenadeGun = false;
 	sniperGunComp->SetVisibility(true);
 	gunMeshComp->SetVisibility(false);
