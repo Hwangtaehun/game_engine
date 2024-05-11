@@ -34,12 +34,24 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 public:
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = FSM)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=FSM)
 	EEnemyState mState = EEnemyState::Idle;
+	UPROPERTY(EditDefaultsOnly, Category=FSM)
+	float idleDelayTime = 2.0f;
+	UPROPERTY(VisibleAnywhere, Category=FSM)
+	class ATPSPlayer* target;
+	UPROPERTY()
+	class AEnemy* me;
+	UPROPERTY(EditAnywhere, Category = FSM)
+	float attackRange = 150.0f;
+	UPROPERTY(EditAnywhere, Category = FSM)
+	float attackDelayTime = 2.0f;
+	float currentTime = 0.0f;
 
 	void IdleState();
 	void MoveState();
 	void AttackState();
 	void DamageState();
 	void DieState();
+	void OnDamageProcess(float damage);
 };

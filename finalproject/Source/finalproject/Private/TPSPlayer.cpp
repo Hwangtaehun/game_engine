@@ -7,6 +7,7 @@
 #include <Camera/CameraComponent.h>
 #include <Blueprint/UserWidget.h>
 #include <Kismet/GameplayStatics.h>
+#include <EnemyFSM.h>
 
 // Sets default values
 ATPSPlayer::ATPSPlayer()
@@ -138,14 +139,21 @@ void ATPSPlayer::InputFire()
 		bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
 
 		if (bHit) {
-			UE_LOG(LogTemp, Log, TEXT("hit"));
+			checkEnemy(hitInfo, 1.0f);
+			/*UE_LOG(LogTemp, Log, TEXT("hit"));
+			auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
+			if (enemy) {
+				UE_LOG(LogTemp, Log, TEXT("enemy"));
+				auto enemyFSM = Cast<UEnemyFSM>(enemy);
+				enemyFSM->OnDamageProcess(3.0f);
+			}*/
 		}
 	}
 	else {
 		bool bHit;
+		FHitResult hitInfo;
 		FVector startPos = tpsCamComp->GetComponentLocation();
 		FVector endPos = tpsCamComp->GetComponentLocation() + tpsCamComp->GetForwardVector() * 5000;
-		FHitResult hitInfo;
 		FCollisionQueryParams params;
 
 		params.AddIgnoredActor(this);
@@ -161,6 +169,13 @@ void ATPSPlayer::InputFire()
 				FVector force = -hitInfo.ImpactNormal * hitComp->GetMass() * 500000;
 				hitComp->AddForce(force);
 			}
+
+			checkEnemy(hitInfo, 3.0f);
+			/*auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
+			if (enemy) {
+				auto enemyFSM = Cast<UEnemyFSM>(enemy);
+				enemyFSM->OnDamageProcess(3.0f);
+			}*/
 		}
 	}
 }
@@ -198,5 +213,26 @@ void ATPSPlayer::SniperAim()
 		_sniperUI->RemoveFromParent();
 		tpsCamComp->SetFieldOfView(90.0f);
 		_crosshairUI->AddToViewport();
+	}
+}
+
+bool ATPSPlayer::checkHit(FHitResult hitInfo)
+{
+	bool bHit;
+	FVector startPos = tpsCamComp->GetComponentLocation();
+	FVector endPos = tpsCamComp->GetComponentLocation() + tpsCamComp->GetForwardVector() * 5000;
+	FCollisionQueryParams params;
+
+	params.AddIgnoredActor(this);
+	bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
+	return bHit;
+}
+
+void ATPSPlayer::checkEnemy(FHitResult hitInfo, float damage)
+{
+	auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
+	if (enemy) {
+		auto enemyFSM = Cast<UEnemyFSM>(enemy);
+		enemyFSM->OnDamageProcess(1.0f);
 	}
 }

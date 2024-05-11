@@ -61,4 +61,8 @@ public:
 	void ChangeToGrenadeGun();
 	void ChangeToSniperGun();
 	void SniperAim();
+
+private:
+	bool checkHit(FHitResult hitInfo);
+	void checkEnemy(FHitResult hitInfo, float damage);
 };
