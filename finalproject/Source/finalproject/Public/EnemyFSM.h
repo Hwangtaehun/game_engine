@@ -46,6 +46,12 @@ public:
 	float attackRange = 150.0f;
 	UPROPERTY(EditAnywhere, Category = FSM)
 	float attackDelayTime = 2.0f;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category=FSM)
+	int32 hp = 6; //º¯°æ
+	UPROPERTY(EditAnywhere, Category=FSM)
+	float damageDelayTime = 2.0f;
+	UPROPERTY(EditAnywhere, Category=FSM)
+	float dieSpeed = 50.0f;
 	float currentTime = 0.0f;
 
 	void IdleState();

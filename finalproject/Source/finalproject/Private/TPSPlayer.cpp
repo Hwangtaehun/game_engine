@@ -127,27 +127,6 @@ void ATPSPlayer::InputFire()
 	if (bUsingGrenadeGun) {
 		FTransform firePosition = gunMeshComp->GetSocketTransform(TEXT("FirePosition"));
 		GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition);
-
-		/*충격 정보 확인하는 함수*/
-		bool bHit;
-		FVector startPos = tpsCamComp->GetComponentLocation();
-		FVector endPos = tpsCamComp->GetComponentLocation() + tpsCamComp->GetForwardVector() * 5000;
-		FHitResult hitInfo;
-		FCollisionQueryParams params;
-
-		params.AddIgnoredActor(this);
-		bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
-
-		if (bHit) {
-			checkEnemy(hitInfo, 1.0f);
-			/*UE_LOG(LogTemp, Log, TEXT("hit"));
-			auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
-			if (enemy) {
-				UE_LOG(LogTemp, Log, TEXT("enemy"));
-				auto enemyFSM = Cast<UEnemyFSM>(enemy);
-				enemyFSM->OnDamageProcess(3.0f);
-			}*/
-		}
 	}
 	else {
 		bool bHit;
@@ -171,11 +150,6 @@ void ATPSPlayer::InputFire()
 			}
 
 			checkEnemy(hitInfo, 3.0f);
-			/*auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
-			if (enemy) {
-				auto enemyFSM = Cast<UEnemyFSM>(enemy);
-				enemyFSM->OnDamageProcess(3.0f);
-			}*/
 		}
 	}
 }
@@ -216,23 +190,11 @@ void ATPSPlayer::SniperAim()
 	}
 }
 
-bool ATPSPlayer::checkHit(FHitResult hitInfo)
-{
-	bool bHit;
-	FVector startPos = tpsCamComp->GetComponentLocation();
-	FVector endPos = tpsCamComp->GetComponentLocation() + tpsCamComp->GetForwardVector() * 5000;
-	FCollisionQueryParams params;
-
-	params.AddIgnoredActor(this);
-	bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
-	return bHit;
-}
-
 void ATPSPlayer::checkEnemy(FHitResult hitInfo, float damage)
 {
 	auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
 	if (enemy) {
 		auto enemyFSM = Cast<UEnemyFSM>(enemy);
-		enemyFSM->OnDamageProcess(1.0f);
+		enemyFSM->OnDamageProcess(damage);
 	}
 }

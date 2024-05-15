@@ -115,6 +115,18 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_attackDelayTime_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_attackDelayTime;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_hp_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_hp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_damageDelayTime_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_damageDelayTime;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_dieSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_dieSpeed;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -174,6 +186,33 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime = { "attackDelayTime", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnemyFSM, attackDelayTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime_MetaData), Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "Public/EnemyFSM.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp = { "hp", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnemyFSM, hp), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp_MetaData), Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime_MetaData[] = {
+		{ "Category", "FSM" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\n" },
+#endif
+		{ "ModuleRelativePath", "Public/EnemyFSM.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime = { "damageDelayTime", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnemyFSM, damageDelayTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime_MetaData), Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed_MetaData[] = {
+		{ "Category", "FSM" },
+		{ "ModuleRelativePath", "Public/EnemyFSM.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed = { "dieSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnemyFSM, dieSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed_MetaData), Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemyFSM_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_mState,
@@ -182,6 +221,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_me,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackRange,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_attackDelayTime,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_hp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_damageDelayTime,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyFSM_Statics::NewProp_dieSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemyFSM_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemyFSM>::IsAbstract,
@@ -225,9 +267,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyFSM() {}
 		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3000543326U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_EnemyFSM_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UEnemyFSM, UEnemyFSM::StaticClass, TEXT("UEnemyFSM"), &Z_Registration_Info_UClass_UEnemyFSM, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyFSM), 3590890236U) },
+		{ Z_Construct_UClass_UEnemyFSM, UEnemyFSM::StaticClass, TEXT("UEnemyFSM"), &Z_Registration_Info_UClass_UEnemyFSM, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyFSM), 2773540185U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_EnemyFSM_h_3804617140(TEXT("/Script/finalproject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_EnemyFSM_h_584137869(TEXT("/Script/finalproject"),
 		Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_EnemyFSM_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_EnemyFSM_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_EnemyFSM_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_EnemyFSM_h_Statics::EnumInfo));

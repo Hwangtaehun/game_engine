@@ -2,6 +2,7 @@
 
 
 #include "Bullet.h"
+#include <EnemyFSM.h>
 #include <Components/SphereComponent.h>
 #include <GameFramework/ProjectileMovementComponent.h>
 
@@ -45,6 +46,23 @@ void ABullet::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	bool bHit;
+	FVector startPos = bodyMeshComp->GetComponentLocation();
+	FVector endPos = bodyMeshComp->GetComponentLocation() + bodyMeshComp->GetForwardVector() * 100;
+	FHitResult hitInfo;
+	FCollisionQueryParams params;
+
+	params.AddIgnoredActor(this);
+	bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
+
+	if (bHit) {
+		auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
+		if (enemy) {
+			auto enemyFSM = Cast<UEnemyFSM>(enemy);
+			enemyFSM->OnDamageProcess(1.0f);
+		}
+		Die();
+	}
 }
 
 void ABullet::Die()
