@@ -140,6 +140,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\finalproject\Private\PlayerAnim.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\finalproject\Private\TPSPlayer.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -150,6 +155,7 @@
     <ClInclude Include="..\..\Source\finalproject\Public\EnemyFSM.h"/>
     <ClInclude Include="..\..\Source\finalproject\Public\finalproject.h"/>
     <ClInclude Include="..\..\Source\finalproject\Public\finalprojectGameModeBase.h"/>
+    <ClInclude Include="..\..\Source\finalproject\Public\PlayerAnim.h"/>
     <ClInclude Include="..\..\Source\finalproject\Public\TPSPlayer.h"/>
   </ItemGroup>
   <PropertyGroup>
