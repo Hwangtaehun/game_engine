@@ -17,6 +17,13 @@ class FINALPROJECT_API UPlayerAnim : public UAnimInstance
 public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = PlayerAnim)
 	float speed = 0.0f;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = PlayerAnim)
+	float direction = 0.0f;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = PlayerAnim)
+	bool isInAir = false;
+	UPROPERTY(EditDefaultsOnly, Category = PlayerAnim)
+	class UAnimMontage* attackAnimMontage;
 
-	virtual void NativeUpdateAnimation(float DeltaSends) override;
+	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
+	void PlayAttackAnim();
 };

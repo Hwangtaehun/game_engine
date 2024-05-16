@@ -11,6 +11,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_UAnimInstance();
+	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	FINALPROJECT_API UClass* Z_Construct_UClass_UPlayerAnim();
 	FINALPROJECT_API UClass* Z_Construct_UClass_UPlayerAnim_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_finalproject();
@@ -33,6 +34,19 @@ void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_speed_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_speed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_direction_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_direction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_isInAir_MetaData[];
+#endif
+		static void NewProp_isInAir_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isInAir;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_attackAnimMontage_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_attackAnimMontage;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -59,8 +73,36 @@ void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed = { "speed", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerAnim, speed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed_MetaData), Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction_MetaData[] = {
+		{ "Category", "PlayerAnim" },
+		{ "ModuleRelativePath", "Public/PlayerAnim.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction = { "direction", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerAnim, direction), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction_MetaData), Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_MetaData[] = {
+		{ "Category", "PlayerAnim" },
+		{ "ModuleRelativePath", "Public/PlayerAnim.h" },
+	};
+#endif
+	void Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_SetBit(void* Obj)
+	{
+		((UPlayerAnim*)Obj)->isInAir = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir = { "isInAir", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UPlayerAnim), &Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_MetaData), Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerAnim_Statics::NewProp_attackAnimMontage_MetaData[] = {
+		{ "Category", "PlayerAnim" },
+		{ "ModuleRelativePath", "Public/PlayerAnim.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerAnim_Statics::NewProp_attackAnimMontage = { "attackAnimMontage", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerAnim, attackAnimMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAnim_Statics::NewProp_attackAnimMontage_MetaData), Z_Construct_UClass_UPlayerAnim_Statics::NewProp_attackAnimMontage_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerAnim_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAnim_Statics::NewProp_speed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAnim_Statics::NewProp_direction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAnim_Statics::NewProp_isInAir,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAnim_Statics::NewProp_attackAnimMontage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPlayerAnim_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UPlayerAnim>::IsAbstract,
@@ -101,9 +143,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerAnim() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_PlayerAnim_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerAnim, UPlayerAnim::StaticClass, TEXT("UPlayerAnim"), &Z_Registration_Info_UClass_UPlayerAnim, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerAnim), 755340174U) },
+		{ Z_Construct_UClass_UPlayerAnim, UPlayerAnim::StaticClass, TEXT("UPlayerAnim"), &Z_Registration_Info_UClass_UPlayerAnim, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerAnim), 426147084U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_PlayerAnim_h_3000462077(TEXT("/Script/finalproject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_PlayerAnim_h_131874855(TEXT("/Script/finalproject"),
 		Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_PlayerAnim_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_PlayerAnim_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
