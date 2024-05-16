@@ -34,7 +34,7 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\finalprojectEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\finalprojectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
 "D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\UnrealEditor\Development\finalproject\Bullet.gen.cpp.obj"
 "D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\UnrealEditor\Development\finalproject\Enemy.gen.cpp.obj"
 "D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\UnrealEditor\Development\finalproject\EnemyAnim.gen.cpp.obj"
@@ -57,6 +57,8 @@
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\UMG\UnrealEditor-UMG.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\NavigationSystem\UnrealEditor-NavigationSystem.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\AIModule\UnrealEditor-AIModule.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"

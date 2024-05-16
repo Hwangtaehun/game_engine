@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-finalproject.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\finalprojectEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\finalprojectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
 "D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\UnrealEditor\Development\finalproject\Bullet.gen.cpp.obj"
 "D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\UnrealEditor\Development\finalproject\Enemy.gen.cpp.obj"
 "D:\Github\game_engine\finalproject\Intermediate\Build\Win64\x64\UnrealEditor\Development\finalproject\EnemyAnim.gen.cpp.obj"

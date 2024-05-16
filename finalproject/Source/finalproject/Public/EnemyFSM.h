@@ -54,7 +54,11 @@ public:
 	float dieSpeed = 50.0f;
 	UPROPERTY()
 	class UEnemyAnim* anim;
+	UPROPERTY()
+	class AAIController* ai;
 	float currentTime = 0.0f;
+	FVector randomPos;
+	bool GetRandomPositionInNavMesh(FVector centerLocation, float radius, FVector& dest);
 
 	void IdleState();
 	void MoveState();
