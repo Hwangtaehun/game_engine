@@ -52,6 +52,8 @@ public:
 	float damageDelayTime = 2.0f;
 	UPROPERTY(EditAnywhere, Category=FSM)
 	float dieSpeed = 50.0f;
+	UPROPERTY()
+	class UEnemyAnim* anim;
 	float currentTime = 0.0f;
 
 	void IdleState();

@@ -260,6 +260,9 @@
 /I "D:\Github\game_engine\finalproject\Intermediate\Build\Win64\UnrealEditor\Inc\finalproject\UHT"
 /I "D:\Github\game_engine\finalproject\Source"
 /I "D:\Github\game_engine\finalproject\Source\finalproject\Public"
+/I "..\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\UHT"
+/I "Runtime\AIModule\Classes"
+/I "Runtime\AIModule\Public"
 /external:W0
 /external:I "ThirdParty\mimalloc\include"
 /external:I "ThirdParty\LibTiff\Source\Win64"

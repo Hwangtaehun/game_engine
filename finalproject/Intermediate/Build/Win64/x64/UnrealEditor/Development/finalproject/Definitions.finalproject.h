@@ -1,4 +1,4 @@
-#include "D:/Github/game_engine/finalproject/Intermediate/Build/Win64/x64/finalprojectEditor/Development/Engine/SharedDefinitions.Engine.Cpp20.h"
+#include "D:/Github/game_engine/finalproject/Intermediate/Build/Win64/x64/finalprojectEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Cpp20.h"
 #undef UE_IS_ENGINE_MODULE
 #undef DEPRECATED_FORGAME
 #define DEPRECATED_FORGAME DEPRECATED
@@ -22,3 +22,7 @@
 #define DEPRECATED_FORGAME DEPRECATED
 #define UE_DEPRECATED_FORGAME UE_DEPRECATED
 #define FINALPROJECT_API DLLEXPORT
+#define WITH_GAMEPLAY_DEBUGGER_CORE 1
+#define WITH_GAMEPLAY_DEBUGGER 1
+#define WITH_GAMEPLAY_DEBUGGER_MENU 1
+#define AIMODULE_API DLLIMPORT

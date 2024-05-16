@@ -7,6 +7,7 @@
 #include <Kismet/GameplayStatics.h>
 #include "finalproject.h"
 #include <Components/CapsuleComponent.h>
+#include "EnemyAnim.h"
 
 // Sets default values for this component's properties
 UEnemyFSM::UEnemyFSM()
@@ -27,6 +28,8 @@ void UEnemyFSM::BeginPlay()
 	auto actor = UGameplayStatics::GetActorOfClass(GetWorld(), ATPSPlayer::StaticClass());
 	target = Cast<ATPSPlayer>(actor);
 	me = Cast<AEnemy>(GetOwner());
+
+	anim = Cast<UEnemyAnim>(me->GetMesh()->GetAnimInstance());
 }
 
 
@@ -62,6 +65,8 @@ void UEnemyFSM::IdleState()
 	if (currentTime > idleDelayTime) {
 		mState = EEnemyState::Move;
 		currentTime = 0;
+
+		anim->animState = mState;
 	}
 }
 
@@ -73,6 +78,9 @@ void UEnemyFSM::MoveState()
 
 	if (dir.Size() < attackRange) {
 		mState = EEnemyState::Attack;
+		anim->animState = mState;
+		anim->bAttackPlay = true;
+		currentTime = attackDelayTime;
 	}
 }
 
@@ -82,11 +90,13 @@ void UEnemyFSM::AttackState()
 	if (currentTime > attackDelayTime) {
 		PRINT_LOG(TEXT("Attack!!!!!"));
 		currentTime = 0;
+		anim->bAttackPlay = true;
 	}
 
 	float distance = FVector::Distance(target->GetActorLocation(), me->GetActorLocation());
 	if (distance < attackRange) {
 		mState = EEnemyState::Move;
+		anim->animState = mState;
 	}
 }
 
@@ -97,11 +107,16 @@ void UEnemyFSM::DamageState()
 	if (currentTime > damageDelayTime) {
 		mState = EEnemyState::Idle;
 		currentTime = 0;
+		anim->animState = mState;
 	}
 }
 
 void UEnemyFSM::DieState()
 {
+	if (anim->bDieDone == false) {
+		return;
+	}
+
 	FVector P0 = me->GetActorLocation();
 	FVector vt = FVector::DownVector * dieSpeed * GetWorld()->DeltaTimeSeconds;
 	FVector P = P0 + vt;
@@ -118,10 +133,17 @@ void UEnemyFSM::OnDamageProcess(float damage)
 
 	if (hp > 0) {
 		mState = EEnemyState::Damage;
+		currentTime = 0;
+
+		int32 index = FMath::RandRange(0, 1);
+		FString sectionName = FString::Printf(TEXT("Damage%d"), 0);
+		anim->PlayDamageAnim(FName(*sectionName));
 	}
 	else {
 		mState = EEnemyState::Die;
 		me->GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		anim->PlayDamageAnim(TEXT("Die"));
 	}
+	anim->animState = mState;
 }
 
