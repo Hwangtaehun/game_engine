@@ -48,6 +48,9 @@
     <ClCompile Include="..\..\Source\finalproject\Private\EnemyFSM.cpp">
       <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\finalproject\Private\EnemyManager.cpp">
+      <Filter>Source\finalproject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\finalproject\Private\finalproject.cpp">
       <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
@@ -73,6 +76,9 @@
       <Filter>Source\finalproject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\finalproject\Public\EnemyFSM.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\finalproject\Public\EnemyManager.h">
       <Filter>Source\finalproject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\finalproject\Public\finalproject.h">
