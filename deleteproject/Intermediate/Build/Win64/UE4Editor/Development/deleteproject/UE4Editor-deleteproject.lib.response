@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-deleteproject.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\deleteprojectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\UE4Editor\Development\deleteproject\deleteproject.cpp.obj"
+"D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\UE4Editor\Development\deleteproject\deleteprojectGameModeBase.cpp.obj"
+"D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\UE4Editor\Development\deleteproject\deleteproject.init.gen.cpp.obj"
+"D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\UE4Editor\Development\deleteproject\deleteprojectGameModeBase.gen.cpp.obj"
+"D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\UE4Editor\Development\deleteproject\Default.rc2.res"
+/OUT:"D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\UE4Editor\Development\deleteproject\UE4Editor-deleteproject.lib"

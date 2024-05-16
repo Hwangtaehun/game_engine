@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "deleteproject",
+			"Path": "D:\\Github\\game_engine\\deleteproject\\Source\\deleteproject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "deleteprojectEditor",
+			"Path": "D:\\Github\\game_engine\\deleteproject\\Source\\deleteprojectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

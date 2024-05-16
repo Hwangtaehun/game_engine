@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Github\\game_engine\\deleteproject\\Source\\deleteproject\\deleteproject.Build.cs",
+		"D:\\Github\\game_engine\\deleteproject\\Source\\deleteproject.Target.cs",
+		"D:\\Github\\game_engine\\deleteproject\\Source\\deleteprojectEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
