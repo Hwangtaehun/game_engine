@@ -1,3 +1,0 @@
-D:\Github\game_engine\deleteproject\Intermediate\Build\Win64\UE4Editor\Development\deleteproject\Definitions.deleteproject.h
-D:\Download\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\Download\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

@@ -47,7 +47,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = FSM)
 	float attackDelayTime = 2.0f;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category=FSM)
-	int32 hp = 6; //º¯°æ
+	int32 hp = 3;
 	UPROPERTY(EditAnywhere, Category=FSM)
 	float damageDelayTime = 2.0f;
 	UPROPERTY(EditAnywhere, Category=FSM)
