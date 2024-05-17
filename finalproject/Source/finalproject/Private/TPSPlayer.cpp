@@ -73,6 +73,5 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	playerMove->SetupInputBinding(PlayerInputComponent);
-	playerFire->SetupInputBinding(PlayerInputComponent);
+	onInputBindingDelegate.Broadcast(PlayerInputComponent);
 }

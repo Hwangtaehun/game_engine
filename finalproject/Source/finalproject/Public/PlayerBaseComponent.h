@@ -18,6 +18,7 @@ public:
 	// Sets default values for this component's properties
 	UPlayerBaseComponent();
 
+	virtual void InitializeComponent() override;
 	virtual void BeginPlay() override;
 	virtual void SetupInputBinding(class UInputComponent* PlayerInputComponent);
 
