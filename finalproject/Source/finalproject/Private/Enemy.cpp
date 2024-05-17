@@ -18,12 +18,6 @@ AEnemy::AEnemy()
 	}
 
 	fsm = CreateDefaultSubobject<UEnemyFSM>(TEXT("FSM"));
-
-	ConstructorHelpers::FClassFinder<UAnimInstance>tempClass(TEXT("/Script/Engine.AnimBlueprint'/Game/Blueprints/ABP_Enemy.ABP_Enemy'"));
-	if (tempClass.Succeeded()) {
-		GetMesh()->SetAnimInstanceClass(tempClass.Class);
-	}
-
 	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 

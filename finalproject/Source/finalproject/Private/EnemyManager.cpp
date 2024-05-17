@@ -9,7 +9,7 @@
 // Sets default values
 AEnemyManager::AEnemyManager()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
 }
@@ -18,7 +18,7 @@ AEnemyManager::AEnemyManager()
 void AEnemyManager::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 	float createTime = FMath::RandRange(minTime, maxTime);
 	GetWorld()->GetTimerManager().SetTimer(spawnTimerHandle, this, &AEnemyManager::CreateEnemy, createTime);
 
@@ -46,10 +46,9 @@ void AEnemyManager::FindSpawnPoints()
 	TArray<AActor*> allActors;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AActor::StaticClass(), allActors);
 
-	for (auto spawn: allActors) {
+	for (auto spawn : allActors) {
 		if (spawn->GetName().Contains(TEXT("BP_EnemySpawnPoint"))) {
 			spawnPoints.Add(spawn);
 		}
 	}
 }
-
