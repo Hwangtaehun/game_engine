@@ -31,6 +31,10 @@ public:
 	class USpringArmComponent* springArmComp;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	class UCameraComponent* tpsCamComp;
+	UPROPERTY(EditAnywhere, Category=PlayerSetting)
+	float walkSpeed = 200.0f;
+	UPROPERTY(EditAnywhere, Category=PlayerSetting)
+	float runSpeed = 600.0f;
 	UPROPERTY(VisibleAnywhere, Category=GunMesh)
 	class USkeletalMeshComponent* gunMeshComp;
 	UPROPERTY(EditDefaultsOnly, Category=BulletFactory)
@@ -47,16 +51,23 @@ public:
 	TSubclassOf<class UCameraShakeBase> cameraShake;
 	UPROPERTY(EditDefaultsOnly, Category = Sound)
 	class USoundBase* bulletSound;
-	UPROPERTY(VisibleAnywhere, Category = Component)
-	class UPlayerBaseComponent* playerMove;
 	class UUserWidget* _sniperUI;
 	class UUserWidget* _crosshairUI;
+	FVector direction;
 	bool bUsingGrenadeGun = true;
 	bool bSniperAim = false;
+
+	void Turn(float value);
+	void LookUp(float value);
+	void InputHorisontal(float value);
+	void InputVertical(float value);
+	void InputJump();
+	void Move();
 	void InputFire();
 	void ChangeToGrenadeGun();
 	void ChangeToSniperGun();
 	void SniperAim();
+	void InputRun();
 
 private:
 	void checkEnemy(FHitResult hitInfo, float damage);
