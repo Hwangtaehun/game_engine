@@ -33,30 +33,12 @@ public:
 	class UCameraComponent* tpsCamComp;
 	UPROPERTY(VisibleAnywhere, Category=GunMesh)
 	class USkeletalMeshComponent* gunMeshComp;
-	UPROPERTY(EditDefaultsOnly, Category=BulletFactory)
-	TSubclassOf<class ABullet> bulletFactory;
 	UPROPERTY(VisibleAnywhere, Category=GunMesh)
 	class UStaticMeshComponent* sniperGunComp;
-	UPROPERTY(EditDefaultsOnly, Category=SniperUI)
-	TSubclassOf<class UUserWidget> sniperUIFactory;
-	UPROPERTY(EditAnywhere, Category=BulletEffect)
-	class UParticleSystem* bulletEffectFactory;
-	UPROPERTY(EditDefaultsOnly, Category = SniperUI)
-	TSubclassOf<class UUserWidget> crosshairUIFactory;
-	UPROPERTY(EditDefaultsOnly, Category = CameraMotion)
-	TSubclassOf<class UCameraShakeBase> cameraShake;
-	UPROPERTY(EditDefaultsOnly, Category = Sound)
-	class USoundBase* bulletSound;
 	UPROPERTY(VisibleAnywhere, Category = Component)
 	class UPlayerBaseComponent* playerMove;
-	class UUserWidget* _sniperUI;
-	class UUserWidget* _crosshairUI;
-	bool bUsingGrenadeGun = true;
-	bool bSniperAim = false;
-	void InputFire();
-	void ChangeToGrenadeGun();
-	void ChangeToSniperGun();
-	void SniperAim();
+	UPROPERTY(VisibleAnywhere, Category = Component)
+	class UPlayerBaseComponent* playerFire;
 
 private:
 	void checkEnemy(FHitResult hitInfo, float damage);

@@ -63,6 +63,9 @@
     <ClCompile Include="..\..\Source\finalproject\Private\PlayerBaseComponent.cpp">
       <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\finalproject\Private\PlayerFire.cpp">
+      <Filter>Source\finalproject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\finalproject\Private\PlayerMove.cpp">
       <Filter>Source\finalproject\Private</Filter>
     </ClCompile>
@@ -97,6 +100,9 @@
       <Filter>Source\finalproject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\finalproject\Public\PlayerBaseComponent.h">
+      <Filter>Source\finalproject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\finalproject\Public\PlayerFire.h">
       <Filter>Source\finalproject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\finalproject\Public\PlayerMove.h">
