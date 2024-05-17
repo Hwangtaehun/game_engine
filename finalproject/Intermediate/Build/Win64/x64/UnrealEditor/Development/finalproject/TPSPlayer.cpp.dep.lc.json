@@ -60,6 +60,10 @@
             "d:\\download\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h",
             "d:\\github\\game_engine\\finalproject\\source\\finalproject\\public\\enemyfsm.h",
             "d:\\github\\game_engine\\finalproject\\intermediate\\build\\win64\\unrealeditor\\inc\\finalproject\\uht\\enemyfsm.generated.h",
+            "d:\\github\\game_engine\\finalproject\\source\\finalproject\\public\\playeranim.h",
+            "d:\\github\\game_engine\\finalproject\\intermediate\\build\\win64\\unrealeditor\\inc\\finalproject\\uht\\playeranim.generated.h",
+            "d:\\github\\game_engine\\finalproject\\source\\finalproject\\public\\playermove.h",
+            "d:\\github\\game_engine\\finalproject\\source\\finalproject\\public\\playerbasecomponent.h",
             "d:\\download\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementcomponent.h",
             "d:\\download\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\ai\\navigation\\navigationavoidancetypes.h",
             "d:\\download\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\navigationavoidancetypes.generated.h",
@@ -78,8 +82,8 @@
             "d:\\download\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\public\\charactermovementcomponentasync.h",
             "d:\\download\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementcomponentasync.generated.h",
             "d:\\download\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementcomponent.generated.h",
-            "d:\\github\\game_engine\\finalproject\\source\\finalproject\\public\\playeranim.h",
-            "d:\\github\\game_engine\\finalproject\\intermediate\\build\\win64\\unrealeditor\\inc\\finalproject\\uht\\playeranim.generated.h"
+            "d:\\github\\game_engine\\finalproject\\intermediate\\build\\win64\\unrealeditor\\inc\\finalproject\\uht\\playerbasecomponent.generated.h",
+            "d:\\github\\game_engine\\finalproject\\intermediate\\build\\win64\\unrealeditor\\inc\\finalproject\\uht\\playermove.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
