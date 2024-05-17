@@ -96,20 +96,20 @@ void UEnemyFSM::MoveState()
 	req.SetGoalLocation(destination);
 	ai->BuildPathfindingQuery(req, query);
 	FPathFindingResult r = ns->FindPathSync(query);
-
 	if (r.Result == ENavigationQueryResult::Success) {
 		ai->MoveToLocation(destination);
 	}
 	else {
 		auto result = ai->MoveToLocation(randomPos);
-
 		if (result == EPathFollowingRequestResult::AlreadyAtGoal) {
 			GetRandomPositionInNavMesh(me->GetActorLocation(), 500, randomPos);
 		}
 	}
 
-	if (dir.Size() < attackRange) {
+	if (dir.Size() < attackRange)
+	{
 		ai->StopMovement();
+
 		mState = EEnemyState::Attack;
 		anim->animState = mState;
 		anim->bAttackPlay = true;
@@ -121,7 +121,6 @@ void UEnemyFSM::AttackState()
 {
 	currentTime += GetWorld()->DeltaTimeSeconds;
 	if (currentTime > attackDelayTime) {
-		PRINT_LOG(TEXT("Attack!!!!!"));
 		currentTime = 0;
 		anim->bAttackPlay = true;
 	}
