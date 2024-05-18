@@ -4,8 +4,10 @@
 #include "TPSPlayer.h"
 #include <GameFramework/SpringArmComponent.h>
 #include <Camera/CameraComponent.h>
+#include <Kismet/GameplayStatics.h>
 #include "PlayerMove.h"
 #include "PlayerFire.h"
+#include <finalproject.h>
 
 // Sets default values
 ATPSPlayer::ATPSPlayer()
@@ -60,6 +62,8 @@ ATPSPlayer::ATPSPlayer()
 void ATPSPlayer::BeginPlay()
 {
 	Super::BeginPlay();
+
+	hp = initialHp;
 }
 
 // Called every frame
@@ -74,4 +78,19 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	onInputBindingDelegate.Broadcast(PlayerInputComponent);
+}
+
+void ATPSPlayer::OnHitEvent()
+{
+	PRINT_LOG(TEXT("Damaged !!!!!"));
+	hp--;
+	if (hp <= 0) {
+		PRINT_LOG(TEXT("Player is dead"));
+		OnGameOver();
+	}
+}
+
+void ATPSPlayer::OnGameOver_Implementation()
+{
+	UGameplayStatics::SetGamePaused(GetWorld(), true);
 }
