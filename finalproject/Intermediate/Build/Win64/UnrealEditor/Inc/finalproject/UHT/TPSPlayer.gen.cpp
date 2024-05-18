@@ -33,10 +33,21 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 		P_THIS->OnHitEvent();
 		P_NATIVE_END;
 	}
+	struct TPSPlayer_eventOnUsingGrenade_Parms
+	{
+		bool isGrenade;
+	};
 	static FName NAME_ATPSPlayer_OnGameOver = FName(TEXT("OnGameOver"));
 	void ATPSPlayer::OnGameOver()
 	{
 		ProcessEvent(FindFunctionChecked(NAME_ATPSPlayer_OnGameOver),NULL);
+	}
+	static FName NAME_ATPSPlayer_OnUsingGrenade = FName(TEXT("OnUsingGrenade"));
+	void ATPSPlayer::OnUsingGrenade(bool isGrenade)
+	{
+		TPSPlayer_eventOnUsingGrenade_Parms Parms;
+		Parms.isGrenade=isGrenade ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_ATPSPlayer_OnUsingGrenade),&Parms);
 	}
 	void ATPSPlayer::StaticRegisterNativesATPSPlayer()
 	{
@@ -90,6 +101,42 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATPSPlayer_OnHitEvent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics
+	{
+		static void NewProp_isGrenade_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isGrenade;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade_SetBit(void* Obj)
+	{
+		((TPSPlayer_eventOnUsingGrenade_Parms*)Obj)->isGrenade = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade = { "isGrenade", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(TPSPlayer_eventOnUsingGrenade_Parms), &Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade_SetBit, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::NewProp_isGrenade,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+		{ "ModuleRelativePath", "Public/TPSPlayer.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATPSPlayer, nullptr, "OnUsingGrenade", nullptr, nullptr, Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::PropPointers), sizeof(TPSPlayer_eventOnUsingGrenade_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::PropPointers) < 2048);
+	static_assert(sizeof(TPSPlayer_eventOnUsingGrenade_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -149,6 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATPSPlayer_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATPSPlayer_OnGameOver, "OnGameOver" }, // 452972751
 		{ &Z_Construct_UFunction_ATPSPlayer_OnHitEvent, "OnHitEvent" }, // 3360301295
+		{ &Z_Construct_UFunction_ATPSPlayer_OnUsingGrenade, "OnUsingGrenade" }, // 3240681327
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ATPSPlayer_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -268,9 +316,9 @@ void EmptyLinkFunctionForGeneratedCodeTPSPlayer() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_TPSPlayer_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ATPSPlayer, ATPSPlayer::StaticClass, TEXT("ATPSPlayer"), &Z_Registration_Info_UClass_ATPSPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATPSPlayer), 3973658712U) },
+		{ Z_Construct_UClass_ATPSPlayer, ATPSPlayer::StaticClass, TEXT("ATPSPlayer"), &Z_Registration_Info_UClass_ATPSPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATPSPlayer), 680637551U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_TPSPlayer_h_2321184225(TEXT("/Script/finalproject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_TPSPlayer_h_3098499904(TEXT("/Script/finalproject"),
 		Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_TPSPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_game_engine_finalproject_Source_finalproject_Public_TPSPlayer_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
