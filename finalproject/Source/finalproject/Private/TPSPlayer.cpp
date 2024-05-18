@@ -2,19 +2,15 @@
 
 
 #include "TPSPlayer.h"
-#include "Bullet.h"
 #include <GameFramework/SpringArmComponent.h>
 #include <Camera/CameraComponent.h>
-#include <Blueprint/UserWidget.h>
-#include <Kismet/GameplayStatics.h>
-#include <EnemyFSM.h>
-#include <GameFramework/CharacterMovementComponent.h>
-#include "PlayerAnim.h"
+#include "PlayerMove.h"
+#include "PlayerFire.h"
 
 // Sets default values
 ATPSPlayer::ATPSPlayer()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	ConstructorHelpers::FObjectFinder<USkeletalMesh> TempMesh(TEXT("/Script/Engine.SkeletalMesh'/Game/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.SK_Mannequin'"));
@@ -56,34 +52,20 @@ ATPSPlayer::ATPSPlayer()
 		sniperGunComp->SetRelativeScale3D(FVector(0.15f));
 	}
 
-	ConstructorHelpers::FObjectFinder<USoundBase> tempSound(TEXT("/Script/Engine.SoundWave'/Game/SniperGun/Rifle.Rifle'"));
-
-	if(tempSound.Succeeded())
-	{
-		bulletSound = tempSound.Object;
-	}
+	playerMove = CreateDefaultSubobject<UPlayerMove>(TEXT("PlayerMove"));
+	playerFire = CreateDefaultSubobject<UPlayerFire>(TEXT("PlayerFire"));
 }
 
 // Called when the game starts or when spawned
 void ATPSPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-
-	GetCharacterMovement()->MaxWalkSpeed = walkSpeed;
-
-	_sniperUI = CreateWidget(GetWorld(), sniperUIFactory);
-	_crosshairUI = CreateWidget(GetWorld(), crosshairUIFactory);
-	_crosshairUI->AddToViewport();
-
-	ChangeToSniperGun();
 }
 
 // Called every frame
 void ATPSPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	Move();
 }
 
 // Called to bind functionality to input
@@ -91,145 +73,5 @@ void ATPSPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATPSPlayer::Turn);
-	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &ATPSPlayer::LookUp);
-	PlayerInputComponent->BindAxis(TEXT("Horizontal"), this, &ATPSPlayer::InputHorisontal);
-	PlayerInputComponent->BindAxis(TEXT("Vertical"), this, &ATPSPlayer::InputVertical);
-	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ATPSPlayer::InputJump);
-	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ATPSPlayer::InputFire);
-	PlayerInputComponent->BindAction(TEXT("GrenadeGun"), IE_Pressed, this, &ATPSPlayer::ChangeToGrenadeGun);
-	PlayerInputComponent->BindAction(TEXT("SniperGun"), IE_Pressed, this, &ATPSPlayer::ChangeToSniperGun);
-	PlayerInputComponent->BindAction(TEXT("Sniper"), IE_Pressed, this, &ATPSPlayer::SniperAim);
-	PlayerInputComponent->BindAction(TEXT("Sniper"), IE_Released, this, &ATPSPlayer::SniperAim);
-	PlayerInputComponent->BindAction(TEXT("Run"), IE_Pressed, this, &ATPSPlayer::InputRun);
-	PlayerInputComponent->BindAction(TEXT("Run"), IE_Released, this, &ATPSPlayer::InputRun);
-}
-
-void ATPSPlayer::Turn(float value)
-{
-	AddControllerYawInput(value);
-}
-
-void ATPSPlayer::LookUp(float value)
-{
-	AddControllerPitchInput(value);
-}
-
-void ATPSPlayer::InputHorisontal(float value)
-{
-	direction.Y = value;
-}
-
-void ATPSPlayer::InputVertical(float value)
-{
-	direction.X = value;
-}
-
-void ATPSPlayer::InputJump()
-{
-	Jump();
-}
-
-void ATPSPlayer::Move()
-{
-	direction = FTransform(GetControlRotation()).TransformVector(direction);
-	AddMovementInput(direction);
-	direction = FVector::ZeroVector;
-}
-
-void ATPSPlayer::InputFire()
-{
-	UGameplayStatics::PlaySound2D(GetWorld(), bulletSound);
-	auto controller = GetWorld()->GetFirstPlayerController();
-	controller->PlayerCameraManager->StartCameraShake(cameraShake);
-	auto anim = Cast<UPlayerAnim>(GetMesh()->GetAnimInstance());
-	anim->PlayAttackAnim();
-
-	if (bUsingGrenadeGun) {
-		FTransform firePosition = gunMeshComp->GetSocketTransform(TEXT("FirePosition"));
-		GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition);
-	}
-	else {
-		bool bHit;
-		FHitResult hitInfo;
-		FVector startPos = tpsCamComp->GetComponentLocation();
-		FVector endPos = tpsCamComp->GetComponentLocation() + tpsCamComp->GetForwardVector() * 5000;
-		FCollisionQueryParams params;
-
-		params.AddIgnoredActor(this);
-		bHit = GetWorld()->LineTraceSingleByChannel(hitInfo, startPos, endPos, ECC_Visibility, params);
-
-		if (bHit) {
-			FTransform bulletTrans;
-			bulletTrans.SetLocation(hitInfo.ImpactPoint);
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), bulletEffectFactory, bulletTrans);
-
-			auto hitComp = hitInfo.GetComponent();
-			if (hitComp && hitComp->IsSimulatingPhysics()) {
-				FVector force = -hitInfo.ImpactNormal * hitComp->GetMass() * 500000;
-				hitComp->AddForce(force);
-			}
-
-			checkEnemy(hitInfo, 3.0f);
-		}
-	}
-}
-
-void ATPSPlayer::ChangeToGrenadeGun()
-{
-	_crosshairUI->RemoveFromParent();
-	bUsingGrenadeGun = true;
-	sniperGunComp->SetVisibility(false);
-	gunMeshComp->SetVisibility(true);
-}
-
-void ATPSPlayer::ChangeToSniperGun()
-{
-	_crosshairUI->AddToViewport();
-	bUsingGrenadeGun = false;
-	sniperGunComp->SetVisibility(true);
-	gunMeshComp->SetVisibility(false);
-}
-
-void ATPSPlayer::SniperAim()
-{
-	if (bUsingGrenadeGun) {
-		return;
-	}
-
-	if (bSniperAim == false) {
-		bSniperAim = true;
-		_sniperUI->AddToViewport();
-		tpsCamComp->SetFieldOfView(45.0f);
-		_crosshairUI->RemoveFromParent();
-	}
-	else {
-		bSniperAim = false;
-		_sniperUI->RemoveFromParent();
-		tpsCamComp->SetFieldOfView(90.0f);
-		_crosshairUI->AddToViewport();
-	}
-}
-
-void ATPSPlayer::InputRun()
-{
-	auto movement = GetCharacterMovement();
-
-	if (movement->MaxWalkSpeed > walkSpeed) 
-	{
-		movement->MaxWalkSpeed = walkSpeed;
-	}
-	else 
-	{
-		movement->MaxWalkSpeed = runSpeed;
-	}
-}
-
-void ATPSPlayer::checkEnemy(FHitResult hitInfo, float damage)
-{
-	auto enemy = hitInfo.GetActor()->GetDefaultSubobjectByName(TEXT("FSM"));
-	if (enemy) {
-		auto enemyFSM = Cast<UEnemyFSM>(enemy);
-		enemyFSM->OnDamageProcess(damage);
-	}
+	onInputBindingDelegate.Broadcast(PlayerInputComponent);
 }
